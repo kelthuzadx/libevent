@@ -88,7 +88,8 @@ main(int argc, char **argv)
 	sin.sin_port = htons(PORT);
 
 ///////////////////////////////////////////////////////////////////////////
-/// 1.event_base_new使用默认设置创建一个指向event_base的指针
+/// 2.evconnlistener_new_bind分配一个connection监听对象，当有新TCP连接时执行
+/// listener_cb回调
 ///////////////////////////////////////////////////////////////////////////
 	listener = evconnlistener_new_bind(base, listener_cb, (void *)base,
 	    LEV_OPT_REUSEABLE|LEV_OPT_CLOSE_ON_FREE, -1,
@@ -99,7 +100,10 @@ main(int argc, char **argv)
 		fprintf(stderr, "Could not create a listener!\n");
 		return 1;
 	}
-
+///////////////////////////////////////////////////////////////////////////
+/// 3. evsignal_new是一个#define evsignal_new(b, x, cb, arg) \
+///                   event_new((b), (x), EV_SIGNAL|EV_PERSIST, (cb), (arg))
+///////////////////////////////////////////////////////////////////////////
 	signal_event = evsignal_new(base, SIGINT, signal_cb, (void *)base);
 
 	if (!signal_event || event_add(signal_event, NULL)<0) {
@@ -118,7 +122,3 @@ main(int argc, char **argv)
 }
 
 ```
-
-## X.参考
-[1] LibeventBook
-[2] http://libevent.org/
