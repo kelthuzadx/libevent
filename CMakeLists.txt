@@ -43,7 +43,6 @@ project(libevent C)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 string(REGEX MATCH "SunOS" SOLARIS "${CMAKE_SYSTEM_NAME}")
 
-
 include(CheckTypeSize)
 include(CheckFunctionExistsEx)
 include(CheckFileOffsetBits)
@@ -119,7 +118,7 @@ option(EVENT__DISABLE_THREAD_SUPPORT
     "Define if libevent should not be compiled with thread support" OFF)
 
 option(EVENT__DISABLE_OPENSSL
-    "Define if libevent should build without support for OpenSSL encrpytion" OFF)
+    "Define if libevent should build without support for OpenSSL encrpytion" ON)
 
 option(EVENT__DISABLE_BENCHMARK
     "Defines if libevent should build without the benchmark exectuables" OFF)
@@ -857,7 +856,8 @@ if (NOT EVENT__DISABLE_SAMPLES)
         signal-test
         http-server
         http-connect
-        time-test)
+        time-test
+        mytest)
 
     foreach(SAMPLE ${SAMPLES})
         add_sample_prog(OFF ${SAMPLE} sample/${SAMPLE}.c)
@@ -1381,4 +1381,3 @@ message(STATUS "CMAKE_C_COMPILER:         " ${CMAKE_C_COMPILER} )
 message(STATUS "CMAKE_AR:                 " ${CMAKE_AR} )
 message(STATUS "CMAKE_RANLIB:             " ${CMAKE_RANLIB} )
 message(STATUS "")
-
