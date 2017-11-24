@@ -57,9 +57,8 @@ void Preprocessor::HandlePragmaPopMacro(Token &PopMacroTok) {
 }
 ```
 
-
 # 3. 又一个hello-world
-这篇文章从`libevent/sample/hello-world.c`开始。`hello-world.c`是一个典型的socket的使用，当客户端通过9995端口与服务器连接后服务器发送`Hello, World!`然后关闭socket。不过现在用的是libevent的事件回调实现的。
+这篇文章从`libevent/sample/hello-world.c`开始。`hello-world.c`是一个典型的socket的使用，当客户端通过9995端口与服务器连接后服务器持续发送`Hello, World!`，不过现在用的是libevent的事件回调实现的。
 ```cpp
 int
 main(int argc, char **argv)
@@ -110,15 +109,199 @@ main(int argc, char **argv)
 		fprintf(stderr, "Could not create/add a signal event!\n");
 		return 1;
 	}
-
+///////////////////////////////////////////////////////////////////////////
+/// 4. event_base_dispatch等价于event_base_loop(event_base, 0)，当一切准备就绪
+/// 后就可以执行它，event_base_dispatch会一直运行，直到没有任何注册事件或者用户调用
+/// event_base_loopexit
+///////////////////////////////////////////////////////////////////////////
 	event_base_dispatch(base);
 
+///////////////////////////////////////////////////////////////////////////
+/// 5. 堆释放
+///////////////////////////////////////////////////////////////////////////
 	evconnlistener_free(listener);
 	event_free(signal_event);
 	event_base_free(base);
 
 	printf("done\n");
 	return 0;
+}
+
+```
+上面就是一个libevent的通用模板：首先创建event_base，然后绑定服务器socket监听端口并注册事件，最后开启事件循环，剩下的工作就是编写各个事件的回调。
+当然别忘了释放内存。下面的小节将深入分析上面提到的各个libevent核心函数。
+
+# 4. event_base_new，事件循环的基石
+event_base_new长这个样：
+```cpp
+struct event_base *
+event_base_new(void)
+{
+	struct event_base *base = NULL;
+	struct event_config *cfg = event_config_new();
+	if (cfg) {
+		base = event_base_new_with_config(cfg);
+		event_config_free(cfg);
+	}
+	return base;
+}
+```
+如果`event_config_new()`就返回带带配置的event_base，否则直接返回NULL，继续看`event_config_new`:
+```cpp
+struct event_config *
+event_config_new(void)
+{
+	struct event_config *cfg = mm_calloc(1, sizeof(*cfg));  //mm_calloc是标准库malloc的包装
+
+	if (cfg == NULL)
+		return (NULL);
+
+	TAILQ_INIT(&cfg->entries);
+	cfg->max_dispatch_interval.tv_sec = -1;
+	cfg->max_dispatch_callbacks = INT_MAX;                  //支持INT_MAX个回调
+	cfg->limit_callbacks_after_prio = 1;
+
+	return (cfg);
+}
+```
+这里TAIL QUEUE是一种数据结构，存在于`compat/sys/queue.h`，里面有对它的详细介绍。我没仔细看，大概是个双向队列。
+event_config_new主要是设置几个固定的配置选项，其他的动态选项都是通过event_base_new_with_config()实现的，具体如下：
+```cpp
+struct event_base *
+event_base_new_with_config(const struct event_config *cfg)
+{
+	int i;
+	struct event_base *base;
+	int should_check_environment;
+
+#ifndef EVENT__DISABLE_DEBUG_MODE
+	event_debug_mode_too_late = 1;
+#endif
+
+	if ((base = mm_calloc(1, sizeof(struct event_base))) == NULL) {
+		event_warn("%s: calloc", __func__);
+		return NULL;
+	}
+
+	if (cfg)
+		base->flags = cfg->flags;
+
+	should_check_environment =
+	    !(cfg && (cfg->flags & EVENT_BASE_FLAG_IGNORE_ENV));
+
+	{
+		struct timeval tmp;
+		int precise_time =
+		    cfg && (cfg->flags & EVENT_BASE_FLAG_PRECISE_TIMER);
+		int flags;
+		if (should_check_environment && !precise_time) {
+			precise_time = evutil_getenv_("EVENT_PRECISE_TIMER") != NULL;
+			base->flags |= EVENT_BASE_FLAG_PRECISE_TIMER;
+		}
+		flags = precise_time ? EV_MONOT_PRECISE : 0;
+		evutil_configure_monotonic_time_(&base->monotonic_timer, flags);
+
+		gettime(base, &tmp);
+	}
+
+	min_heap_ctor_(&base->timeheap);
+
+	base->sig.ev_signal_pair[0] = -1;
+	base->sig.ev_signal_pair[1] = -1;
+	base->th_notify_fd[0] = -1;
+	base->th_notify_fd[1] = -1;
+
+	TAILQ_INIT(&base->active_later_queue);
+
+	evmap_io_initmap_(&base->io);
+	evmap_signal_initmap_(&base->sigmap);
+	event_changelist_init_(&base->changelist);
+
+	base->evbase = NULL;
+
+	if (cfg) {
+		memcpy(&base->max_dispatch_time,
+		    &cfg->max_dispatch_interval, sizeof(struct timeval));
+		base->limit_callbacks_after_prio =
+		    cfg->limit_callbacks_after_prio;
+	} else {
+		base->max_dispatch_time.tv_sec = -1;
+		base->limit_callbacks_after_prio = 1;
+	}
+	if (cfg && cfg->max_dispatch_callbacks >= 0) {
+		base->max_dispatch_callbacks = cfg->max_dispatch_callbacks;
+	} else {
+		base->max_dispatch_callbacks = INT_MAX;
+	}
+	if (base->max_dispatch_callbacks == INT_MAX &&
+	    base->max_dispatch_time.tv_sec == -1)
+		base->limit_callbacks_after_prio = INT_MAX;
+
+	for (i = 0; eventops[i] && !base->evbase; i++) {
+		if (cfg != NULL) {
+			/* determine if this backend should be avoided */
+			if (event_config_is_avoided_method(cfg,
+				eventops[i]->name))
+				continue;
+			if ((eventops[i]->features & cfg->require_features)
+			    != cfg->require_features)
+				continue;
+		}
+
+		/* also obey the environment variables */
+		if (should_check_environment &&
+		    event_is_method_disabled(eventops[i]->name))
+			continue;
+
+		base->evsel = eventops[i];
+
+		base->evbase = base->evsel->init(base);
+	}
+
+	if (base->evbase == NULL) {
+		event_warnx("%s: no event mechanism available",
+		    __func__);
+		base->evsel = NULL;
+		event_base_free(base);
+		return NULL;
+	}
+
+	if (evutil_getenv_("EVENT_SHOW_METHOD"))
+		event_msgx("libevent using: %s", base->evsel->name);
+
+	/* allocate a single active event queue */
+	if (event_base_priority_init(base, 1) < 0) {
+		event_base_free(base);
+		return NULL;
+	}
+
+	/* prepare for threading */
+
+#if !defined(EVENT__DISABLE_THREAD_SUPPORT) && !defined(EVENT__DISABLE_DEBUG_MODE)
+	event_debug_created_threadable_ctx_ = 1;
+#endif
+
+#ifndef EVENT__DISABLE_THREAD_SUPPORT
+	if (EVTHREAD_LOCKING_ENABLED() &&
+	    (!cfg || !(cfg->flags & EVENT_BASE_FLAG_NOLOCK))) {
+		int r;
+		EVTHREAD_ALLOC_LOCK(base->th_base_lock, 0);
+		EVTHREAD_ALLOC_COND(base->current_event_cond);
+		r = evthread_make_base_notifiable(base);
+		if (r<0) {
+			event_warnx("%s: Unable to make base notifiable.", __func__);
+			event_base_free(base);
+			return NULL;
+		}
+	}
+#endif
+
+#ifdef _WIN32
+	if (cfg && (cfg->flags & EVENT_BASE_FLAG_STARTUP_IOCP))
+		event_base_start_iocp_(base, cfg->n_cpus_hint);
+#endif
+
+	return (base);
 }
 
 ```
