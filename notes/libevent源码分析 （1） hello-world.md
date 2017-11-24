@@ -372,3 +372,80 @@ event_base_new_with_config(const struct event_config *cfg)
 }
 
 ```
+既然我现在用的就是Windows，那不妨再继续跟进看看libevent是怎么使用IOCP作为IO多路复用后端的
+```cpp
+///event.c
+///小中转，实际是下面的event_iocp_port_launch_();
+int
+event_base_start_iocp_(struct event_base *base, int n_cpus)
+{
+#ifdef _WIN32
+	if (base->iocp)
+		return 0;
+	base->iocp = event_iocp_port_launch_(n_cpus);
+	if (!base->iocp) {
+		event_warnx("%s: Couldn't launch IOCP", __func__);
+		return -1;
+	}
+	return 0;
+#else
+	return -1;
+#endif
+}
+
+/// event_iocp.c
+#define N_CPUS_DEFAULT 2
+
+struct event_iocp_port *
+event_iocp_port_launch_(int n_cpus)
+{
+	struct event_iocp_port *port;
+	int i;
+
+	if (!extension_fns_initialized)
+		init_extension_functions(&the_extension_fns);
+
+	if (!(port = mm_calloc(1, sizeof(struct event_iocp_port))))
+		return NULL;
+
+	if (n_cpus <= 0)
+		n_cpus = N_CPUS_DEFAULT;
+	port->n_threads = n_cpus * 2;
+	port->threads = mm_calloc(port->n_threads, sizeof(HANDLE));
+	if (!port->threads)
+		goto err;
+
+	port->port = CreateIoCompletionPort(INVALID_HANDLE_VALUE, NULL, 0,
+			n_cpus);
+	port->ms = -1;
+	if (!port->port)
+		goto err;
+
+	port->shutdownSemaphore = CreateSemaphore(NULL, 0, 1, NULL);
+	if (!port->shutdownSemaphore)
+		goto err;
+
+	for (i=0; i<port->n_threads; ++i) {
+		ev_uintptr_t th = _beginthread(loop, 0, port);
+		if (th == (ev_uintptr_t)-1)
+			goto err;
+		port->threads[i] = (HANDLE)th;
+		++port->n_live_threads;
+	}
+
+	InitializeCriticalSectionAndSpinCount(&port->lock, 1000);
+
+	return port;
+err:
+	if (port->port)
+		CloseHandle(port->port);
+	if (port->threads)
+		mm_free(port->threads);
+	if (port->shutdownSemaphore)
+		CloseHandle(port->shutdownSemaphore);
+	mm_free(port);
+	return NULL;
+}
+
+
+```
