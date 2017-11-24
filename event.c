@@ -700,7 +700,7 @@ event_base_new_with_config(const struct event_config *cfg)
 }
 
 int
-event_base_start_iocp_(struct event_base *base, int n_cpus)
+event_base_start_iocp_(struct event_base *base, short n_cpus)
 {
 #ifdef _WIN32
 	if (base->iocp)
@@ -1163,7 +1163,7 @@ event_config_require_features(struct event_config *cfg,
 }
 
 int
-event_config_set_num_cpus_hint(struct event_config *cfg, int cpus)
+event_config_set_num_cpus_hint(struct event_config *cfg, short cpus)
 {
 	if (!cfg)
 		return (-1);

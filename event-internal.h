@@ -359,7 +359,7 @@ struct event_config_entry {
 struct event_config {
 	TAILQ_HEAD(event_configq, event_config_entry) entries;
 
-	int n_cpus_hint;
+	short n_cpus_hint;
 	struct timeval max_dispatch_interval;
 	int max_dispatch_callbacks;
 	int limit_callbacks_after_prio;

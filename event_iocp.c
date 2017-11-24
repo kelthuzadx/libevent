@@ -173,7 +173,7 @@ event_get_win32_extension_fns_(void)
 #define N_CPUS_DEFAULT 2
 
 struct event_iocp_port *
-event_iocp_port_launch_(int n_cpus)
+event_iocp_port_launch_(short n_cpus)
 {
 	struct event_iocp_port *port;
 	int i;
