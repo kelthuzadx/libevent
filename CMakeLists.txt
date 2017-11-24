@@ -857,7 +857,8 @@ if (NOT EVENT__DISABLE_SAMPLES)
         http-server
         http-connect
         time-test
-        mytest)
+        my-sizeofstructs
+        my-stdarg)
 
     foreach(SAMPLE ${SAMPLES})
         add_sample_prog(OFF ${SAMPLE} sample/${SAMPLE}.c)

@@ -572,7 +572,30 @@ event_base_new_with_config(const struct event_config *cfg)
 #ifndef EVENT__DISABLE_DEBUG_MODE
 	event_debug_mode_too_late = 1;
 #endif
+///////////////////////////////////////////////////////////////////////////
+/// 1. event_base实际分配内存的地方
+/// 多说一点，event_warn是可变参数的封装，关于var_*可以参见下面的demo
+#if 0
+    long long summer(int num,...){
+        int sum = 0;
+        va_list ap;
+        va_start(ap,num);
+        for(int i =0;i<num;i++){
+            sum += va_arg(ap,int);
+        }
+        va_end(ap);
+        return sum;
+    }
 
+    void printWrapper(char * fmt,...){
+        va_list ap;
+
+        va_start(ap, fmt);
+        vfprintf(stdout,fmt , ap);
+        va_end(ap);
+    }
+#endif
+///////////////////////////////////////////////////////////////////////////
 	if ((base = mm_calloc(1, sizeof(struct event_base))) == NULL) {
 		event_warn("%s: calloc", __func__);
 		return NULL;

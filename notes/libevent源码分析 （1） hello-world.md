@@ -1,8 +1,8 @@
 # Libevent源码分析 (1) hello-world
 
-⑨月份接触了久闻大名的[libevent](https://github.com/libevent/libevent)，当时想读读源码，可是由于事情比较多一直没有时间，现在手头的东西基本告一段落了，我准备读读libevent的源码，同时简单记录下，与君共勉。
+⑨月份接触了久闻大名的[libevent](https://github.com/libevent/libevent)，当时想读读源码，可是由于事情比较多一直没有时间，现在手头的东西基本告一段落了，我准备读读libevent的源码，凡是我觉得有必要的内容均一一记录，与君共勉。
 
-首先要说说什么是libevent。可以参见官方定义：
+首先要说说什么是libevent:
 > [libevent](http://libevent.org/)是一个事件通知库，libevent API提供一种机制使得我们可以在一个文件描述符(file descriptor)发生特定事件时或者timeout发生时执行指定的回调函数。libevent意图代替事件驱动服务器上的事件循环。应用程序只需要调用`event_dispatch()`，然后动态添加或者删除事件，而不需要修改事件循环
 
 # 1.构建环境
@@ -58,7 +58,7 @@ void Preprocessor::HandlePragmaPopMacro(Token &PopMacroTok) {
 ```
 
 # 3. 又一个hello-world
-这篇文章从`libevent/sample/hello-world.c`开始。`hello-world.c`是一个典型的socket的使用，当客户端通过9995端口与服务器连接后服务器持续发送`Hello, World!`，不过现在用的是libevent的事件回调实现的。
+回到主题，这篇文章从`libevent/sample/hello-world.c`开始。`hello-world.c`是一个典型的socket的使用，当客户端通过9995端口与服务器连接后服务器持续发送`Hello, World!`，不过现在用的是libevent的事件回调实现的。
 ```cpp
 int
 main(int argc, char **argv)
@@ -129,10 +129,11 @@ main(int argc, char **argv)
 
 ```
 上面就是一个libevent的通用模板：首先创建event_base，然后绑定服务器socket监听端口并注册事件，最后开启事件循环，剩下的工作就是编写各个事件的回调。
-当然别忘了释放内存。下面的小节将深入分析上面提到的各个libevent核心函数。
+当然别忘了释放内存。下面的小节自顶向下分析`hello-world`用到的各个libevent APIs的实现。
 
-# 4. event_base_new，事件循环的基石
-event_base_new长这个样：
+# 3.1. event_base_new，事件循环的基石
+这个结构体的名字都叫**event_base**足见它的重要性，所以首先我们来看看它是怎么构造出来的。
+好吧，其实对于99%的应用程序调用一个**event_base_new**就万事大吉了，它长这个样：
 ```cpp
 struct event_base *
 event_base_new(void)
@@ -146,7 +147,8 @@ event_base_new(void)
 	return base;
 }
 ```
-如果`event_config_new()`就返回带带配置的event_base，否则直接返回NULL，继续看`event_config_new`:
+如果**event_config_new()**调用成功，**event_base_new()**返回带配置的event_base，否则直接返回NULL。
+继续看**event_config_new**:
 ```cpp
 struct event_config *
 event_config_new(void)
@@ -164,8 +166,9 @@ event_config_new(void)
 	return (cfg);
 }
 ```
-这里TAIL QUEUE是一种数据结构，存在于`compat/sys/queue.h`，里面有对它的详细介绍。我没仔细看，大概是个双向队列。
-event_config_new主要是设置几个固定的配置选项，其他的动态选项都是通过event_base_new_with_config()实现的，具体如下：
+这里TAIL QUEUE是一种数据结构，存在于`compat/sys/queue.h (compat=>compatible)`，里面有对它的详细介绍,大概是个双向队列。
+event_config_new设置了几个固定的配置项，它的配置不完全，
+还需要和**event_base_new_with_config()**一起才能构造出event_base这个大型数据结构(`#pragma pack(1)后sizoef(struct event_base)==688字节`):
 ```cpp
 struct event_base *
 event_base_new_with_config(const struct event_config *cfg)
