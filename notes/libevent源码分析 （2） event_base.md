@@ -1,7 +1,7 @@
 
 # 3.1. event_base_new，事件循环的基石
-这个结构体的名字都叫**event_base**足见它的重要性，所以首先我们来看看它是怎么构造出来的。
-好吧，其实对于99%的应用程序调用一个**event_base_new**就万事大吉了，它长这个样：
+如官方介绍所说，对于99%的应用程序调用一个**event_base_new**就万事大吉了，不过既然是源码分析当然要从源码而不是应用的角度出发，况且这个结构体的名字都叫**event_base**足见它的重要性，现在我们先来看看它是怎么构造出来的。
+，它长这个样：
 ```cpp
 struct event_base *
 event_base_new(void)
@@ -15,8 +15,6 @@ event_base_new(void)
 	return base;
 }
 ```
-如果**event_config_new()**调用成功，**event_base_new()**返回带配置的event_base，否则直接返回NULL。
-继续看**event_config_new**:
 ```cpp
 struct event_config *
 event_config_new(void)
@@ -34,9 +32,10 @@ event_config_new(void)
 	return (cfg);
 }
 ```
-这里TAIL QUEUE是一种数据结构，存在于`compat/sys/queue.h (compat=>compatible)`，里面有对它的详细介绍,大概是个双向队列。
-event_config_new设置了几个固定的配置项，它的配置不完全，
-还需要和**event_base_new_with_config()**一起才能构造出event_base这个大型数据结构(`#pragma pack(1)后sizoef(struct event_base)==688字节`):
+如果**event_config_new()**调用成功，**event_base_new()**返回带配置的event_base，否则直接返回NULL。
+继续走到**event_config_new()**里面的**event_config_new**，这里TAIL QUEUE是一种数据结构，存在于`compat/sys/queue.h (compat=>compatible)`，里面有对它的详细介绍,大概是个双向队列。
+event_config_new设置了几个固定的配置项，它的配置不完全，还需要和**event_base_new_with_config()** 一起才能构造出event_base这个大型数据结构
+> (`#pragma pack(1)后sizoef(struct event_base)==688字节`)
 ```cpp
 struct event_base *
 event_base_new_with_config(const struct event_config *cfg)
@@ -240,10 +239,11 @@ event_base_new_with_config(const struct event_config *cfg)
 }
 
 ```
-既然我现在用的就是Windows，那不妨再继续跟进看看libevent是怎么使用IOCP作为IO多路复用后端的
+**event_base_new_with_config()**完成了**event_base_new()** 绝大部分工作，它也是这篇文章的线索，鉴于其重要性上面我详细注释了一番。
+这里我们从大多数人最关心的内容即第六部分libevent怎么使用Win IOCP作为其IO多路复用后端开始自底向上介绍。
 ```cpp
 ///event.c
-///小中转，实际是下面的event_iocp_port_launch_();
+///包装了一下错误，实际创建IOCP是下面的event_iocp_port_launch_();
 int
 event_base_start_iocp_(struct event_base *base, int n_cpus)
 {
@@ -260,7 +260,8 @@ event_base_start_iocp_(struct event_base *base, int n_cpus)
 	return -1;
 #endif
 }
-
+```
+```cpp
 /// event_iocp.c
 #define N_CPUS_DEFAULT 2
 
@@ -314,6 +315,4 @@ err:
 	mm_free(port);
 	return NULL;
 }
-
-
 ```
