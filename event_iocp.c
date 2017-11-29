@@ -175,6 +175,31 @@ event_get_win32_extension_fns_(void)
 struct event_iocp_port *
 event_iocp_port_launch_(int n_cpus)
 {
+	///////////////////////////////////////////////////////////////////////////
+	///储存IOCP数据的结构体。这个函数(event_iocp_port_launch_()的目的就是填充它
+	///它的具体结构如下
+#if 0
+	struct event_iocp_port {
+	/** The port itself */
+	HANDLE port;
+	/* A lock to cover internal structures. */
+	CRITICAL_SECTION lock;
+	/** Number of threads ever open on the port. */
+	short n_threads;
+	/** True iff we're shutting down all the threads on this port */
+	short shutdown;
+	/** How often the threads on this port check for shutdown and other
+	 * conditions */
+	long ms;
+	/* The threads that are waiting for events. */
+	HANDLE *threads;
+	/** Number of threads currently open on this port. */
+	short n_live_threads;
+	/** A semaphore to signal when we are done shutting down. */
+	HANDLE *shutdownSemaphore;
+};
+#endif
+	///////////////////////////////////////////////////////////////////////////
 	struct event_iocp_port *port;
 	int i;
 
@@ -212,6 +237,10 @@ event_iocp_port_launch_(int n_cpus)
 	InitializeCriticalSectionAndSpinCount(&port->lock, 1000);
 
 	return port;
+
+	///////////////////////////////////////////////////////////////////////////
+	///集中错误处理。第一次见到这种风格。
+	///////////////////////////////////////////////////////////////////////////
 err:
 	if (port->port)
 		CloseHandle(port->port);
