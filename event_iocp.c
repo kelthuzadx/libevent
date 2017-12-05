@@ -180,22 +180,21 @@ event_iocp_port_launch_(int n_cpus)
 	///它的具体结构如下
 #if 0
 	struct event_iocp_port {
-	/** The port itself */
+	/** IOCP handle */
 	HANDLE port;
-	/* A lock to cover internal structures. */
+	/* 该结构关联的锁 */
 	CRITICAL_SECTION lock;
-	/** Number of threads ever open on the port. */
+	/** 工作在IOCP上的线程数 */
 	short n_threads;
-	/** True iff we're shutting down all the threads on this port */
+	/** 如果为true则关闭所有工作者线程 */
 	short shutdown;
-	/** How often the threads on this port check for shutdown and other
-	 * conditions */
+	/** 定义每隔多久线程检查shutdown↑和其他条件 */
 	long ms;
-	/* The threads that are waiting for events. */
+	/* 等待事件的线程 */
 	HANDLE *threads;
-	/** Number of threads currently open on this port. */
+	/** 当前端口打开的线程数 */
 	short n_live_threads;
-	/** A semaphore to signal when we are done shutting down. */
+	/** 关闭线程s信号量 */
 	HANDLE *shutdownSemaphore;
 };
 #endif
@@ -216,16 +215,26 @@ event_iocp_port_launch_(int n_cpus)
 	if (!port->threads)
 		goto err;
 
+    ///////////////////////////////////////////////////////////////////////////
+    /// #define N_CPUS_DEFAULT 2
+    /// n_cpus = N_CPUS_DEFAULT
+    ///
+    /// 即一个IOCP默认两个worker线程。
+    ///////////////////////////////////////////////////////////////////////////
 	port->port = CreateIoCompletionPort(INVALID_HANDLE_VALUE, NULL, 0,
 			n_cpus);
 	port->ms = -1;
 	if (!port->port)
 		goto err;
-
+    ///////////////////////////////////////////////////////////////////////////
+    /// 用于关闭IOCP上所有的工作者线程的信号量，由于不需要并发所以第三个参数最大并发量为1
+    ///////////////////////////////////////////////////////////////////////////
 	port->shutdownSemaphore = CreateSemaphore(NULL, 0, 1, NULL);
 	if (!port->shutdownSemaphore)
 		goto err;
-
+    ///////////////////////////////////////////////////////////////////////////
+    ///工作者线程需要手动创建，n_live_threads++
+    ///////////////////////////////////////////////////////////////////////////
 	for (i=0; i<port->n_threads; ++i) {
 		ev_uintptr_t th = _beginthread(loop, 0, port);
 		if (th == (ev_uintptr_t)-1)
@@ -233,7 +242,9 @@ event_iocp_port_launch_(int n_cpus)
 		port->threads[i] = (HANDLE)th;
 		++port->n_live_threads;
 	}
-
+    ///////////////////////////////////////////////////////////////////////////
+    ///初始化锁
+    ///////////////////////////////////////////////////////////////////////////
 	InitializeCriticalSectionAndSpinCount(&port->lock, 1000);
 
 	return port;

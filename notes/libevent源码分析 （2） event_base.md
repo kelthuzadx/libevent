@@ -1,7 +1,7 @@
 
 # 3.1. event_base_new，事件循环的基石
 如官方介绍所说，对于99%的应用程序调用一个**event_base_new**就万事大吉了，不过既然是源码分析当然要从源码而不是应用的角度出发，况且这个结构体的名字都叫**event_base**足见它的重要性，现在我们先来看看它是怎么构造出来的。
-，它长这个样：
+它长这个样：
 ```cpp
 struct event_base *
 event_base_new(void)
@@ -263,11 +263,34 @@ event_base_start_iocp_(struct event_base *base, int n_cpus)
 ```
 ```cpp
 /// event_iocp.c
-#define N_CPUS_DEFAULT 2
 
 struct event_iocp_port *
 event_iocp_port_launch_(int n_cpus)
 {
+	///////////////////////////////////////////////////////////////////////////
+	///储存IOCP数据的结构体。这个函数(event_iocp_port_launch_()的目的就是填充它
+	///它的具体结构如下
+#if 0
+	struct event_iocp_port {
+	/** IOCP handle */
+	HANDLE port;
+	/* 该结构关联的锁 */
+	CRITICAL_SECTION lock;
+	/** 工作在IOCP上的线程数 */
+	short n_threads;
+	/** 如果为true则关闭所有工作者线程 */
+	short shutdown;
+	/** 定义每隔多久线程检查shutdown↑和其他条件 */
+	long ms;
+	/* 等待事件的线程 */
+	HANDLE *threads;
+	/** 当前端口打开的线程数 */
+	short n_live_threads;
+	/** 关闭线程s信号量 */
+	HANDLE *shutdownSemaphore;
+};
+#endif
+	///////////////////////////////////////////////////////////////////////////
 	struct event_iocp_port *port;
 	int i;
 
@@ -284,16 +307,26 @@ event_iocp_port_launch_(int n_cpus)
 	if (!port->threads)
 		goto err;
 
+    ///////////////////////////////////////////////////////////////////////////
+    /// #define N_CPUS_DEFAULT 2
+    /// n_cpus = N_CPUS_DEFAULT
+    ///
+    /// 即一个IOCP默认两个worker线程。
+    ///////////////////////////////////////////////////////////////////////////
 	port->port = CreateIoCompletionPort(INVALID_HANDLE_VALUE, NULL, 0,
 			n_cpus);
 	port->ms = -1;
 	if (!port->port)
 		goto err;
-
+    ///////////////////////////////////////////////////////////////////////////
+    /// 用于关闭IOCP上所有的工作者线程的信号量，由于不需要并发所以第三个参数最大并发量为1
+    ///////////////////////////////////////////////////////////////////////////
 	port->shutdownSemaphore = CreateSemaphore(NULL, 0, 1, NULL);
 	if (!port->shutdownSemaphore)
 		goto err;
-
+    ///////////////////////////////////////////////////////////////////////////
+    ///工作者线程需要手动创建，n_live_threads++
+    ///////////////////////////////////////////////////////////////////////////
 	for (i=0; i<port->n_threads; ++i) {
 		ev_uintptr_t th = _beginthread(loop, 0, port);
 		if (th == (ev_uintptr_t)-1)
@@ -301,10 +334,16 @@ event_iocp_port_launch_(int n_cpus)
 		port->threads[i] = (HANDLE)th;
 		++port->n_live_threads;
 	}
-
+    ///////////////////////////////////////////////////////////////////////////
+    ///初始化锁
+    ///////////////////////////////////////////////////////////////////////////
 	InitializeCriticalSectionAndSpinCount(&port->lock, 1000);
 
 	return port;
+
+	///////////////////////////////////////////////////////////////////////////
+	///集中错误处理。第一次见到这种风格。
+	///////////////////////////////////////////////////////////////////////////
 err:
 	if (port->port)
 		CloseHandle(port->port);
