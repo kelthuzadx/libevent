@@ -1,0 +1,2363 @@
+Determining if the __GNU_LIBRARY__ exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_34729/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_34729.dir\build.make CMakeFiles/cmTC_34729.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34729.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_34729.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: features.h: No such file or directory
+ #include <features.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_34729.dir\build.make:65: CMakeFiles/cmTC_34729.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_34729/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <features.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GNU_LIBRARY__
+  return ((int*)(&__GNU_LIBRARY__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _GNU_SOURCE exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_85226/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_85226.dir\build.make CMakeFiles/cmTC_85226.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85226.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_85226.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: features.h: No such file or directory
+ #include <features.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_85226.dir\build.make:65: CMakeFiles/cmTC_85226.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_85226/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <features.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _GNU_SOURCE
+  return ((int*)(&_GNU_SOURCE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file sys/socket.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_b40af/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_b40af.dir\build.make CMakeFiles/cmTC_b40af.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b40af.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_b40af.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/socket.h: No such file or directory
+ #include <sys/socket.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_b40af.dir\build.make:65: CMakeFiles/cmTC_b40af.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_b40af/fast] Error 2
+
+
+Determining if the include file netinet/in.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_5eeca/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_5eeca.dir\build.make CMakeFiles/cmTC_5eeca.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5eeca.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_5eeca.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: netinet/in.h: No such file or directory
+ #include <netinet/in.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_5eeca.dir\build.make:65: CMakeFiles/cmTC_5eeca.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_5eeca/fast] Error 2
+
+
+Determining if the include file netinet/in6.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f833d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f833d.dir\build.make CMakeFiles/cmTC_f833d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f833d.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f833d.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: netinet/in6.h: No such file or directory
+ #include <netinet/in6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f833d.dir\build.make:65: CMakeFiles/cmTC_f833d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f833d/fast] Error 2
+
+
+Determining if the include file netdb.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_b4a40/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_b4a40.dir\build.make CMakeFiles/cmTC_b4a40.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4a40.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_b4a40.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: netdb.h: No such file or directory
+ #include <netdb.h>
+          ^~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_b4a40.dir\build.make:65: CMakeFiles/cmTC_b4a40.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_b4a40/fast] Error 2
+
+
+Determining if the include file dlfcn.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_56697/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_56697.dir\build.make CMakeFiles/cmTC_56697.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56697.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_56697.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: dlfcn.h: No such file or directory
+ #include <dlfcn.h>
+          ^~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_56697.dir\build.make:65: CMakeFiles/cmTC_56697.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_56697/fast] Error 2
+
+
+Determining if the include file arpa/inet.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_22e18/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_22e18.dir\build.make CMakeFiles/cmTC_22e18.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22e18.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_22e18.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: arpa/inet.h: No such file or directory
+ #include <arpa/inet.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_22e18.dir\build.make:65: CMakeFiles/cmTC_22e18.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_22e18/fast] Error 2
+
+
+Determining if the include file poll.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_aeeee/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_aeeee.dir\build.make CMakeFiles/cmTC_aeeee.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aeeee.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_aeeee.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: poll.h: No such file or directory
+ #include <poll.h>
+          ^~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_aeeee.dir\build.make:65: CMakeFiles/cmTC_aeeee.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_aeeee/fast] Error 2
+
+
+Determining if the include file port.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_28b81/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_28b81.dir\build.make CMakeFiles/cmTC_28b81.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28b81.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_28b81.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: port.h: No such file or directory
+ #include <port.h>
+          ^~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_28b81.dir\build.make:65: CMakeFiles/cmTC_28b81.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_28b81/fast] Error 2
+
+
+Determining if the include file sys/devpoll.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a7456/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7456.dir\build.make CMakeFiles/cmTC_a7456.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7456.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a7456.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/devpoll.h: No such file or directory
+ #include <sys/devpoll.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a7456.dir\build.make:65: CMakeFiles/cmTC_a7456.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a7456/fast] Error 2
+
+
+Determining if the include file sys/epoll.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_cfee3/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_cfee3.dir\build.make CMakeFiles/cmTC_cfee3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfee3.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_cfee3.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/epoll.h: No such file or directory
+ #include <sys/epoll.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_cfee3.dir\build.make:65: CMakeFiles/cmTC_cfee3.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_cfee3/fast] Error 2
+
+
+Determining if the include file sys/eventfd.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_1e8c4/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1e8c4.dir\build.make CMakeFiles/cmTC_1e8c4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e8c4.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_1e8c4.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/eventfd.h: No such file or directory
+ #include <sys/eventfd.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1e8c4.dir\build.make:65: CMakeFiles/cmTC_1e8c4.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_1e8c4/fast] Error 2
+
+
+Determining if the include file sys/event.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_992a1/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_992a1.dir\build.make CMakeFiles/cmTC_992a1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_992a1.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_992a1.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/event.h: No such file or directory
+ #include <sys/event.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_992a1.dir\build.make:65: CMakeFiles/cmTC_992a1.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_992a1/fast] Error 2
+
+
+Determining if the include file sys/ioctl.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9c56d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9c56d.dir\build.make CMakeFiles/cmTC_9c56d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c56d.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9c56d.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/ioctl.h: No such file or directory
+ #include <sys/ioctl.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9c56d.dir\build.make:65: CMakeFiles/cmTC_9c56d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_9c56d/fast] Error 2
+
+
+Determining if the include file sys/mman.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a2471/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a2471.dir\build.make CMakeFiles/cmTC_a2471.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2471.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a2471.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/mman.h: No such file or directory
+ #include <sys/mman.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a2471.dir\build.make:65: CMakeFiles/cmTC_a2471.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a2471/fast] Error 2
+
+
+Determining if the include file sys/queue.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_96a3e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_96a3e.dir\build.make CMakeFiles/cmTC_96a3e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96a3e.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_96a3e.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/queue.h: No such file or directory
+ #include <sys/queue.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_96a3e.dir\build.make:65: CMakeFiles/cmTC_96a3e.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_96a3e/fast] Error 2
+
+
+Determining if the include file sys/select.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_79ace/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_79ace.dir\build.make CMakeFiles/cmTC_79ace.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79ace.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_79ace.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/select.h: No such file or directory
+ #include <sys/select.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_79ace.dir\build.make:65: CMakeFiles/cmTC_79ace.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_79ace/fast] Error 2
+
+
+Determining if the include file sys/sendfile.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2edb3/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2edb3.dir\build.make CMakeFiles/cmTC_2edb3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2edb3.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2edb3.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/sendfile.h: No such file or directory
+ #include <sys/sendfile.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2edb3.dir\build.make:65: CMakeFiles/cmTC_2edb3.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_2edb3/fast] Error 2
+
+
+Determining if the include file sys/uio.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_813bc/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_813bc.dir\build.make CMakeFiles/cmTC_813bc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_813bc.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_813bc.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/uio.h: No such file or directory
+ #include <sys/uio.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_813bc.dir\build.make:65: CMakeFiles/cmTC_813bc.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_813bc/fast] Error 2
+
+
+Determining if files sys/types.h;ifaddrs.h exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4977a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4977a.dir\build.make CMakeFiles/cmTC_4977a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4977a.dir/EVENT__HAVE_IFADDRS_H.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_4977a.dir\EVENT__HAVE_IFADDRS_H.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckIncludeFiles\EVENT__HAVE_IFADDRS_H.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckIncludeFiles\EVENT__HAVE_IFADDRS_H.c:3:10: fatal error: ifaddrs.h: No such file or directory
+ #include <ifaddrs.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4977a.dir\build.make:65: CMakeFiles/cmTC_4977a.dir/EVENT__HAVE_IFADDRS_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4977a/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ifaddrs.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file mach/mach_time.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d8616/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d8616.dir\build.make CMakeFiles/cmTC_d8616.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8616.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d8616.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: mach/mach_time.h: No such file or directory
+ #include <mach/mach_time.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d8616.dir\build.make:65: CMakeFiles/cmTC_d8616.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_d8616/fast] Error 2
+
+
+Determining if the include file netinet/tcp.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_6aacf/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6aacf.dir\build.make CMakeFiles/cmTC_6aacf.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6aacf.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_6aacf.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: netinet/tcp.h: No such file or directory
+ #include <netinet/tcp.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_6aacf.dir\build.make:65: CMakeFiles/cmTC_6aacf.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_6aacf/fast] Error 2
+
+
+Determining if the include file sys/wait.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_c8587/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c8587.dir\build.make CMakeFiles/cmTC_c8587.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8587.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_c8587.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/wait.h: No such file or directory
+ #include <sys/wait.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_c8587.dir\build.make:65: CMakeFiles/cmTC_c8587.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_c8587/fast] Error 2
+
+
+Determining if the include file sys/resource.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_3474d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3474d.dir\build.make CMakeFiles/cmTC_3474d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3474d.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_3474d.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/resource.h: No such file or directory
+ #include <sys/resource.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_3474d.dir\build.make:65: CMakeFiles/cmTC_3474d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_3474d/fast] Error 2
+
+
+Determining if the include file sys/sysctl.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f4c34/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f4c34.dir\build.make CMakeFiles/cmTC_f4c34.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4c34.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f4c34.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/sysctl.h: No such file or directory
+ #include <sys/sysctl.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f4c34.dir\build.make:65: CMakeFiles/cmTC_f4c34.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f4c34/fast] Error 2
+
+
+Determining if the include file sys/timerfd.h exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_49850/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_49850.dir\build.make CMakeFiles/cmTC_49850.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49850.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_49850.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/timerfd.h: No such file or directory
+ #include <sys/timerfd.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_49850.dir\build.make:65: CMakeFiles/cmTC_49850.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_49850/fast] Error 2
+
+
+Determining if the function epoll_create exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f560e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f560e.dir\build.make CMakeFiles/cmTC_f560e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f560e.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f560e.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'epoll_create' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f560e.dir\build.make:65: CMakeFiles/cmTC_f560e.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f560e/fast] Error 2
+
+
+Determining if the function epoll_ctl exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_ccc7d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ccc7d.dir\build.make CMakeFiles/cmTC_ccc7d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccc7d.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_ctl   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_ccc7d.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'epoll_ctl' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_ccc7d.dir\build.make:65: CMakeFiles/cmTC_ccc7d.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_ccc7d/fast] Error 2
+
+
+Determining if the function eventfd exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9d25e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9d25e.dir\build.make CMakeFiles/cmTC_9d25e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d25e.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=eventfd   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9d25e.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'eventfd' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9d25e.dir\build.make:65: CMakeFiles/cmTC_9d25e.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_9d25e/fast] Error 2
+
+
+Determining if the function clock_gettime exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a4598/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a4598.dir\build.make CMakeFiles/cmTC_a4598.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4598.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=clock_gettime   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a4598.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'clock_gettime' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a4598.dir\build.make:65: CMakeFiles/cmTC_a4598.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a4598/fast] Error 2
+
+
+Determining if the function fcntl exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e66ac/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e66ac.dir\build.make CMakeFiles/cmTC_e66ac.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e66ac.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=fcntl   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e66ac.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'fcntl' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e66ac.dir\build.make:65: CMakeFiles/cmTC_e66ac.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_e66ac/fast] Error 2
+
+
+Determining if the function getaddrinfo exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f8445/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f8445.dir\build.make CMakeFiles/cmTC_f8445.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8445.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getaddrinfo   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f8445.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getaddrinfo' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f8445.dir\build.make:65: CMakeFiles/cmTC_f8445.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f8445/fast] Error 2
+
+
+Determining if the function getnameinfo exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4de5d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4de5d.dir\build.make CMakeFiles/cmTC_4de5d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4de5d.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getnameinfo   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_4de5d.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getnameinfo' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4de5d.dir\build.make:65: CMakeFiles/cmTC_4de5d.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4de5d/fast] Error 2
+
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_aaad3/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_aaad3.dir\build.make CMakeFiles/cmTC_aaad3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aaad3.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gettimeofday   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_aaad3.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'gettimeofday' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_aaad3.dir\build.make:65: CMakeFiles/cmTC_aaad3.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_aaad3/fast] Error 2
+
+
+Determining if the function getprotobynumber exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f9d8d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f9d8d.dir\build.make CMakeFiles/cmTC_f9d8d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9d8d.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getprotobynumber   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f9d8d.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getprotobynumber' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f9d8d.dir\build.make:65: CMakeFiles/cmTC_f9d8d.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f9d8d/fast] Error 2
+
+
+Determining if the function getservbyname exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_251b8/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_251b8.dir\build.make CMakeFiles/cmTC_251b8.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_251b8.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getservbyname   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_251b8.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getservbyname' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_251b8.dir\build.make:65: CMakeFiles/cmTC_251b8.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_251b8/fast] Error 2
+
+
+Determining if the function inet_ntop exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_76d2c/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_76d2c.dir\build.make CMakeFiles/cmTC_76d2c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76d2c.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_ntop   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_76d2c.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'inet_ntop' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_76d2c.dir\build.make:65: CMakeFiles/cmTC_76d2c.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_76d2c/fast] Error 2
+
+
+Determining if the function inet_pton exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e5055/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e5055.dir\build.make CMakeFiles/cmTC_e5055.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5055.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_pton   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e5055.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'inet_pton' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e5055.dir\build.make:65: CMakeFiles/cmTC_e5055.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_e5055/fast] Error 2
+
+
+Determining if the function kqueue exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_00b7f/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_00b7f.dir\build.make CMakeFiles/cmTC_00b7f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00b7f.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=kqueue   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_00b7f.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'kqueue' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_00b7f.dir\build.make:65: CMakeFiles/cmTC_00b7f.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_00b7f/fast] Error 2
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_dd643/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_dd643.dir\build.make CMakeFiles/cmTC_dd643.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd643.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mmap   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_dd643.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'mmap' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_dd643.dir\build.make:65: CMakeFiles/cmTC_dd643.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_dd643/fast] Error 2
+
+
+Determining if the function pipe exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_80160/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_80160.dir\build.make CMakeFiles/cmTC_80160.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80160.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_80160.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'pipe' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_80160.dir\build.make:65: CMakeFiles/cmTC_80160.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_80160/fast] Error 2
+
+
+Determining if the function pipe2 exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_81087/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_81087.dir\build.make CMakeFiles/cmTC_81087.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81087.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe2   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_81087.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'pipe2' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_81087.dir\build.make:65: CMakeFiles/cmTC_81087.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_81087/fast] Error 2
+
+
+Determining if the function poll exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d7823/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d7823.dir\build.make CMakeFiles/cmTC_d7823.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7823.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=poll   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d7823.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'poll' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d7823.dir\build.make:65: CMakeFiles/cmTC_d7823.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_d7823/fast] Error 2
+
+
+Determining if the function port_create exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_03307/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_03307.dir\build.make CMakeFiles/cmTC_03307.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03307.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=port_create   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_03307.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'port_create' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_03307.dir\build.make:65: CMakeFiles/cmTC_03307.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_03307/fast] Error 2
+
+
+Determining if the function sendfile exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2dacc/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2dacc.dir\build.make CMakeFiles/cmTC_2dacc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dacc.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sendfile   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2dacc.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'sendfile' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2dacc.dir\build.make:65: CMakeFiles/cmTC_2dacc.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_2dacc/fast] Error 2
+
+
+Determining if the function sigaction exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2c393/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2c393.dir\build.make CMakeFiles/cmTC_2c393.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c393.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sigaction   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2c393.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'sigaction' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2c393.dir\build.make:65: CMakeFiles/cmTC_2c393.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_2c393/fast] Error 2
+
+
+Determining if the function signal exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9b029/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9b029.dir\build.make CMakeFiles/cmTC_9b029.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b029.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=signal   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9b029.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'signal' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9b029.dir\build.make:65: CMakeFiles/cmTC_9b029.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_9b029/fast] Error 2
+
+
+Determining if the function splice exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a854f/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a854f.dir\build.make CMakeFiles/cmTC_a854f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a854f.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=splice   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a854f.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'splice' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a854f.dir\build.make:65: CMakeFiles/cmTC_a854f.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a854f/fast] Error 2
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_6a59c/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6a59c.dir\build.make CMakeFiles/cmTC_6a59c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a59c.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strlcpy   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_6a59c.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'strlcpy' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_6a59c.dir\build.make:65: CMakeFiles/cmTC_6a59c.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_6a59c/fast] Error 2
+
+
+Determining if the function strsep exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_cadce/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_cadce.dir\build.make CMakeFiles/cmTC_cadce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cadce.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strsep   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_cadce.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'strsep' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_cadce.dir\build.make:65: CMakeFiles/cmTC_cadce.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_cadce/fast] Error 2
+
+
+Determining if the function strtok_r exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_48cae/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_48cae.dir\build.make CMakeFiles/cmTC_48cae.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48cae.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtok_r   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_48cae.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'strtok_r' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_48cae.dir\build.make:65: CMakeFiles/cmTC_48cae.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_48cae/fast] Error 2
+
+
+Determining if the function strtoll exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f9311/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f9311.dir\build.make CMakeFiles/cmTC_f9311.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9311.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtoll   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f9311.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'strtoll' undeclared (first use in this function); did you mean '_stdcall'?
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f9311.dir\build.make:65: CMakeFiles/cmTC_f9311.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f9311/fast] Error 2
+
+
+Determining if the function vasprintf exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_627b2/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_627b2.dir\build.make CMakeFiles/cmTC_627b2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_627b2.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=vasprintf   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_627b2.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'vasprintf' undeclared (first use in this function); did you mean '__sprintf_chk'?
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_627b2.dir\build.make:65: CMakeFiles/cmTC_627b2.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_627b2/fast] Error 2
+
+
+Determining if the function sysctl exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_95b1e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_95b1e.dir\build.make CMakeFiles/cmTC_95b1e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95b1e.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sysctl   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_95b1e.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'sysctl' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_95b1e.dir\build.make:65: CMakeFiles/cmTC_95b1e.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_95b1e/fast] Error 2
+
+
+Determining if the function accept4 exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f04eb/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f04eb.dir\build.make CMakeFiles/cmTC_f04eb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f04eb.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=accept4   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f04eb.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'accept4' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f04eb.dir\build.make:65: CMakeFiles/cmTC_f04eb.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f04eb/fast] Error 2
+
+
+Determining if the function arc4random exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4589c/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4589c.dir\build.make CMakeFiles/cmTC_4589c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4589c.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_4589c.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'arc4random' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4589c.dir\build.make:65: CMakeFiles/cmTC_4589c.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4589c/fast] Error 2
+
+
+Determining if the function arc4random_buf exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_33b3e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_33b3e.dir\build.make CMakeFiles/cmTC_33b3e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33b3e.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_buf   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_33b3e.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'arc4random_buf' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_33b3e.dir\build.make:65: CMakeFiles/cmTC_33b3e.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_33b3e/fast] Error 2
+
+
+Determining if the function arc4random_addrandom exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_38a2a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_38a2a.dir\build.make CMakeFiles/cmTC_38a2a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38a2a.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_addrandom   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_38a2a.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'arc4random_addrandom' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_38a2a.dir\build.make:65: CMakeFiles/cmTC_38a2a.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_38a2a/fast] Error 2
+
+
+Determining if the function epoll_create1 exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_87e17/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_87e17.dir\build.make CMakeFiles/cmTC_87e17.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87e17.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create1   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_87e17.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'epoll_create1' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_87e17.dir\build.make:65: CMakeFiles/cmTC_87e17.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_87e17/fast] Error 2
+
+
+Determining if the function getegid exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a7e3d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7e3d.dir\build.make CMakeFiles/cmTC_a7e3d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7e3d.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getegid   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a7e3d.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getegid' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a7e3d.dir\build.make:65: CMakeFiles/cmTC_a7e3d.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a7e3d/fast] Error 2
+
+
+Determining if the function geteuid exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2ab68/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2ab68.dir\build.make CMakeFiles/cmTC_2ab68.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ab68.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=geteuid   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2ab68.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'geteuid' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2ab68.dir\build.make:65: CMakeFiles/cmTC_2ab68.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_2ab68/fast] Error 2
+
+
+Determining if the function getifaddrs exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a8d51/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a8d51.dir\build.make CMakeFiles/cmTC_a8d51.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8d51.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getifaddrs   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a8d51.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'getifaddrs' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a8d51.dir\build.make:65: CMakeFiles/cmTC_a8d51.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a8d51/fast] Error 2
+
+
+Determining if the function issetugid exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_32f61/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_32f61.dir\build.make CMakeFiles/cmTC_32f61.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32f61.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=issetugid   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_32f61.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'issetugid' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_32f61.dir\build.make:65: CMakeFiles/cmTC_32f61.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_32f61/fast] Error 2
+
+
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_fabaa/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_fabaa.dir\build.make CMakeFiles/cmTC_fabaa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fabaa.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mach_absolute_time   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_fabaa.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'mach_absolute_time' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_fabaa.dir\build.make:65: CMakeFiles/cmTC_fabaa.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_fabaa/fast] Error 2
+
+
+Determining if the function nanosleep exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d347a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d347a.dir\build.make CMakeFiles/cmTC_d347a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d347a.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=nanosleep   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d347a.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'nanosleep' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d347a.dir\build.make:65: CMakeFiles/cmTC_d347a.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_d347a/fast] Error 2
+
+
+Determining if the function usleep exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2091b/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2091b.dir\build.make CMakeFiles/cmTC_2091b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2091b.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=usleep   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2091b.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'usleep' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2091b.dir\build.make:65: CMakeFiles/cmTC_2091b.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_2091b/fast] Error 2
+
+
+Determining if the function timeradd exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_26e84/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_26e84.dir\build.make CMakeFiles/cmTC_26e84.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26e84.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timeradd   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_26e84.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'timeradd' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_26e84.dir\build.make:65: CMakeFiles/cmTC_26e84.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_26e84/fast] Error 2
+
+
+Determining if the function timerclear exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_1fc72/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1fc72.dir\build.make CMakeFiles/cmTC_1fc72.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fc72.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerclear   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_1fc72.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'timerclear' undeclared (first use in this function); did you mean '__atomic_clear'?
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1fc72.dir\build.make:65: CMakeFiles/cmTC_1fc72.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_1fc72/fast] Error 2
+
+
+Determining if the function timercmp exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e7630/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e7630.dir\build.make CMakeFiles/cmTC_e7630.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7630.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timercmp   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e7630.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'timercmp' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e7630.dir\build.make:65: CMakeFiles/cmTC_e7630.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_e7630/fast] Error 2
+
+
+Determining if the function timerfd_create exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_720ea/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_720ea.dir\build.make CMakeFiles/cmTC_720ea.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_720ea.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerfd_create   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_720ea.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'timerfd_create' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_720ea.dir\build.make:65: CMakeFiles/cmTC_720ea.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_720ea/fast] Error 2
+
+
+Determining if the function timerisset exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f08d0/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f08d0.dir\build.make CMakeFiles/cmTC_f08d0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f08d0.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerisset   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f08d0.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'timerisset' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f08d0.dir\build.make:65: CMakeFiles/cmTC_f08d0.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_f08d0/fast] Error 2
+
+
+Determining if the function putenv exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_3491b/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3491b.dir\build.make CMakeFiles/cmTC_3491b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3491b.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=putenv   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_3491b.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'putenv' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_3491b.dir\build.make:65: CMakeFiles/cmTC_3491b.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_3491b/fast] Error 2
+
+
+Determining if the function setenv exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_7e2be/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7e2be.dir\build.make CMakeFiles/cmTC_7e2be.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e2be.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setenv   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_7e2be.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'setenv' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_7e2be.dir\build.make:65: CMakeFiles/cmTC_7e2be.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_7e2be/fast] Error 2
+
+
+Determining if the function setrlimit exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_24f97/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_24f97.dir\build.make CMakeFiles/cmTC_24f97.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24f97.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setrlimit   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_24f97.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'setrlimit' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_24f97.dir\build.make:65: CMakeFiles/cmTC_24f97.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_24f97/fast] Error 2
+
+
+Determining if the function umask exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_acdfd/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_acdfd.dir\build.make CMakeFiles/cmTC_acdfd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acdfd.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=umask   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_acdfd.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'umask' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_acdfd.dir\build.make:65: CMakeFiles/cmTC_acdfd.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_acdfd/fast] Error 2
+
+
+Determining if the function unsetenv exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a15e0/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a15e0.dir\build.make CMakeFiles/cmTC_a15e0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a15e0.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=unsetenv   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a15e0.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'unsetenv' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a15e0.dir\build.make:65: CMakeFiles/cmTC_a15e0.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a15e0/fast] Error 2
+
+
+Determining if the function gethostbyname_r exists failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4d3b3/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4d3b3.dir\build.make CMakeFiles/cmTC_4d3b3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d3b3.dir/CheckFunctionExistsEx.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gethostbyname_r   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_4d3b3.dir\CheckFunctionExistsEx.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c: In function 'main':
+<command-line>:0:23: error: 'gethostbyname_r' undeclared (first use in this function)
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:15: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   void * p = &CHECK_FUNCTION_EXISTS;
+               ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake\CheckFunctionExistsEx.c:15:10: warning: unused variable 'p' [-Wunused-variable]
+   void * p = &CHECK_FUNCTION_EXISTS;
+          ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4d3b3.dir\build.make:65: CMakeFiles/cmTC_4d3b3.dir/CheckFunctionExistsEx.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4d3b3/fast] Error 2
+
+
+Determining if the TAILQ_FOREACH exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_218e9/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_218e9.dir\build.make CMakeFiles/cmTC_218e9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_218e9.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_218e9.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: sys/queue.h: No such file or directory
+ #include <sys/queue.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_218e9.dir\build.make:65: CMakeFiles/cmTC_218e9.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_218e9/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH
+  return ((int*)(&TAILQ_FOREACH))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_DECL_CTL_KERN failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a4bae/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a4bae.dir\build.make CMakeFiles/cmTC_a4bae.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4bae.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_DECL_CTL_KERN   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a4bae.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:2:18: fatal error: sys/sysctl.h: No such file or directory
+         #include <sys/sysctl.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a4bae.dir\build.make:65: CMakeFiles/cmTC_a4bae.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a4bae/fast] Error 2
+
+Source file was:
+
+        #include <sys/sysctl.h>
+      int main() { (void)CTL_KERN; return 0; }
+Performing C SOURCE FILE Test EVENT__HAVE_DECL_KERN_ARND failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_94309/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_94309.dir\build.make CMakeFiles/cmTC_94309.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94309.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_DECL_KERN_ARND   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_94309.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:2:18: fatal error: sys/sysctl.h: No such file or directory
+         #include <sys/sysctl.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_94309.dir\build.make:65: CMakeFiles/cmTC_94309.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_94309/fast] Error 2
+
+Source file was:
+
+        #include <sys/sysctl.h>
+      int main() { (void)KERN_ARND; return 0; }
+Performing C SOURCE FILE Test EVENT__HAVE_DECL_KERN_RANDOM failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_3a980/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3a980.dir\build.make CMakeFiles/cmTC_3a980.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a980.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_DECL_KERN_RANDOM   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_3a980.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:2:18: fatal error: sys/sysctl.h: No such file or directory
+         #include <sys/sysctl.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_3a980.dir\build.make:65: CMakeFiles/cmTC_3a980.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_3a980/fast] Error 2
+
+Source file was:
+
+        #include <sys/sysctl.h>
+      int main() { (void)KERN_RANDOM; return 0; }
+Performing C SOURCE FILE Test EVENT__HAVE_DECL_RANDOM_UUID failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_1176a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1176a.dir\build.make CMakeFiles/cmTC_1176a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1176a.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_DECL_RANDOM_UUID   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_1176a.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:2:18: fatal error: sys/sysctl.h: No such file or directory
+         #include <sys/sysctl.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1176a.dir\build.make:65: CMakeFiles/cmTC_1176a.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_1176a/fast] Error 2
+
+Source file was:
+
+        #include <sys/sysctl.h>
+      int main() { (void)RANDOM_UUID; return 0; }
+Determining if the F_SETFD exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_574fa/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_574fa.dir\build.make CMakeFiles/cmTC_574fa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_574fa.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_574fa.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: 'F_SETFD' undeclared (first use in this function)
+   return ((int*)(&F_SETFD))[argc];
+                   ^~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_574fa.dir\build.make:65: CMakeFiles/cmTC_574fa.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_574fa/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_SETFD
+  return ((int*)(&F_SETFD))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of fd_mask failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_8ac25/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_8ac25.dir\build.make CMakeFiles/cmTC_8ac25.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ac25.dir/EVENT__HAVE_FD_MASK.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_8ac25.dir\EVENT__HAVE_FD_MASK.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_FD_MASK.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_FD_MASK.c:28:22: error: 'fd_mask' undeclared here (not in a function); did you mean 'umask'?
+ #define SIZE (sizeof(fd_mask))
+                      ^
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_FD_MASK.c:28:22: note: in definition of macro 'SIZE'
+ #define SIZE (sizeof(fd_mask))
+                      ^~~~~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8ac25.dir\build.make:65: CMakeFiles/cmTC_8ac25.dir/EVENT__HAVE_FD_MASK.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_8ac25/fast] Error 2
+
+C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__HAVE_FD_MASK.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "winsock2.h"
+#include "ws2tcpip.h"
+#include "sys/types.h"
+#include "fcntl.h"
+#include "sys/time.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(fd_mask))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of pthread_t failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_dbede/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_dbede.dir\build.make CMakeFiles/cmTC_dbede.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dbede.dir/EVENT__SIZEOF_PTHREAD_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_dbede.dir\EVENT__SIZEOF_PTHREAD_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PTHREAD_T.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PTHREAD_T.c:28:22: error: 'pthread_t' undeclared here (not in a function); did you mean '_threadid'?
+ #define SIZE (sizeof(pthread_t))
+                      ^
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PTHREAD_T.c:28:22: note: in definition of macro 'SIZE'
+ #define SIZE (sizeof(pthread_t))
+                      ^~~~~~~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_dbede.dir\build.make:65: CMakeFiles/cmTC_dbede.dir/EVENT__SIZEOF_PTHREAD_T.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_dbede/fast] Error 2
+
+C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_PTHREAD_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "winsock2.h"
+#include "ws2tcpip.h"
+#include "sys/types.h"
+#include "fcntl.h"
+#include "sys/time.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(pthread_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the _MINIX exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4a82c/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4a82c.dir\build.make CMakeFiles/cmTC_4a82c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a82c.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_4a82c.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: '_MINIX' undeclared (first use in this function); did you mean '_WIN64'?
+   return ((int*)(&_MINIX))[argc];
+                   ^~~~~~
+                   _WIN64
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4a82c.dir\build.make:65: CMakeFiles/cmTC_4a82c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4a82c/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _MINIX
+  return ((int*)(&_MINIX))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _POSIX_1_SOURCE exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9526b/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9526b.dir\build.make CMakeFiles/cmTC_9526b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9526b.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9526b.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: '_POSIX_1_SOURCE' undeclared (first use in this function)
+   return ((int*)(&_POSIX_1_SOURCE))[argc];
+                   ^~~~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9526b.dir\build.make:65: CMakeFiles/cmTC_9526b.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_9526b/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _POSIX_1_SOURCE
+  return ((int*)(&_POSIX_1_SOURCE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _POSIX_SOURCE exist failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_86ddb/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_86ddb.dir\build.make CMakeFiles/cmTC_86ddb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86ddb.dir/CheckSymbolExists.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_86ddb.dir\CheckSymbolExists.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: '_POSIX_SOURCE' undeclared (first use in this function)
+   return ((int*)(&_POSIX_SOURCE))[argc];
+                   ^~~~~~~~~~~~~
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_86ddb.dir\build.make:65: CMakeFiles/cmTC_86ddb.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_86ddb/fast] Error 2
+
+File C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _POSIX_SOURCE
+  return ((int*)(&_POSIX_SOURCE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16 failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a9380/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a9380.dir\build.make CMakeFiles/cmTC_a9380.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9380.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16   -o CMakeFiles\cmTC_a9380.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:39: error: 'struct in6_addr' has no member named 's6_addr16'
+    (void)sizeof(((struct in6_addr *)0)->s6_addr16);
+                                       ^~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a9380.dir\build.make:65: CMakeFiles/cmTC_a9380.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_a9380/fast] Error 2
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct in6_addr *)0)->s6_addr16);
+   return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32 failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_4a08a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4a08a.dir\build.make CMakeFiles/cmTC_4a08a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a08a.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32   -o CMakeFiles\cmTC_4a08a.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:39: error: 'struct in6_addr' has no member named 's6_addr32'
+    (void)sizeof(((struct in6_addr *)0)->s6_addr32);
+                                       ^~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4a08a.dir\build.make:65: CMakeFiles/cmTC_4a08a.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_4a08a/fast] Error 2
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct in6_addr *)0)->s6_addr32);
+   return 0;
+}
+
+Determining size of sa_family_t failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_25fe0/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_25fe0.dir\build.make CMakeFiles/cmTC_25fe0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25fe0.dir/EVENT__HAVE_SA_FAMILY_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles\cmTC_25fe0.dir\EVENT__HAVE_SA_FAMILY_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_SA_FAMILY_T.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_SA_FAMILY_T.c:29:22: error: 'sa_family_t' undeclared here (not in a function)
+ #define SIZE (sizeof(sa_family_t))
+                      ^
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_SA_FAMILY_T.c:31:12: note: in expansion of macro 'SIZE'
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_25fe0.dir\build.make:65: CMakeFiles/cmTC_25fe0.dir/EVENT__HAVE_SA_FAMILY_T.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_25fe0/fast] Error 2
+
+C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__HAVE_SA_FAMILY_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "winsock2.h"
+#include "ws2tcpip.h"
+#include "sys/types.h"
+#include "fcntl.h"
+#include "sys/time.h"
+#include "ws2tcpip.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(sa_family_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_370fb/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_370fb.dir\build.make CMakeFiles/cmTC_370fb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_370fb.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN   -o CMakeFiles\cmTC_370fb.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:45: error: 'struct sockaddr_in6' has no member named 'sin6_len'; did you mean 'sin6_port'?
+    (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+                                             ^~~~~~~~
+                                             sin6_port
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_370fb.dir\build.make:65: CMakeFiles/cmTC_370fb.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_370fb/fast] Error 2
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+   return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_1dd8b/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1dd8b.dir\build.make CMakeFiles/cmTC_1dd8b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1dd8b.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN   -o CMakeFiles\cmTC_1dd8b.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:43: error: 'struct sockaddr_in6' has no member named 'sin_len'
+    (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
+                                           ^~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1dd8b.dir\build.make:65: CMakeFiles/cmTC_1dd8b.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_1dd8b/fast] Error 2
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
+   return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY failed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_35d15/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_35d15.dir\build.make CMakeFiles/cmTC_35d15.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35d15.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY   -o CMakeFiles\cmTC_35d15.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:49: error: 'struct sockaddr_storage' has no member named '__ss_family'; did you mean 'ss_family'?
+    (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
+                                                 ^~~~~~~~~~~
+                                                 ss_family
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_35d15.dir\build.make:65: CMakeFiles/cmTC_35d15.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_35d15/fast] Error 2
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
+   return 0;
+}
+

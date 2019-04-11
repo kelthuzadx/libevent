@@ -1,0 +1,358 @@
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Cthulhu\Desktop\libevent
+-- The C compiler identification is GNU 7.1.0
+-- Check for working C compiler: F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/gcc.exe
+-- Check for working C compiler: F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Git: F:/Program Files (x86)/Git/cmd/git.exe  
+-- Performing Test check_c_compiler_flag__Wall
+-- Performing Test check_c_compiler_flag__Wall - Success
+-- Performing Test check_c_compiler_flag__Wswitch
+-- Performing Test check_c_compiler_flag__Wswitch - Success
+-- Performing Test check_c_compiler_flag__fno_strict_aliasing
+-- Performing Test check_c_compiler_flag__fno_strict_aliasing - Success
+-- Looking for __GNU_LIBRARY__
+-- Looking for __GNU_LIBRARY__ - not found
+-- Looking for _GNU_SOURCE
+-- Looking for _GNU_SOURCE - not found
+-- Looking for sys/types.h
+CMake Warning (dev) at F:/Program Files/JetBrains/apps/CLion/ch-0/182.3684.76/bin/cmake/win/share/cmake-3.12/Modules/CheckIncludeFile.cmake:70 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    ws2_32.lib
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  CMakeLists.txt:240 (CHECK_INCLUDE_FILE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for sys/types.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - not found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - not found
+-- Looking for netinet/in6.h
+-- Looking for netinet/in6.h - not found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for netdb.h
+-- Looking for netdb.h - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - not found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - not found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for poll.h
+-- Looking for poll.h - not found
+-- Looking for port.h
+-- Looking for port.h - not found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/devpoll.h
+-- Looking for sys/devpoll.h - not found
+-- Looking for sys/epoll.h
+-- Looking for sys/epoll.h - not found
+-- Looking for sys/eventfd.h
+-- Looking for sys/eventfd.h - not found
+-- Looking for sys/event.h
+-- Looking for sys/event.h - not found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - not found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - not found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for sys/queue.h
+-- Looking for sys/queue.h - not found
+-- Looking for sys/select.h
+-- Looking for sys/select.h - not found
+-- Looking for sys/sendfile.h
+-- Looking for sys/sendfile.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for sys/uio.h
+-- Looking for sys/uio.h - not found
+-- Looking for include files sys/types.h, ifaddrs.h
+-- Looking for include files sys/types.h, ifaddrs.h - not found
+-- Looking for mach/mach_time.h
+-- Looking for mach/mach_time.h - not found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - not found
+-- Looking for sys/wait.h
+-- Looking for sys/wait.h - not found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - not found
+-- Looking for sys/sysctl.h
+-- Looking for sys/sysctl.h - not found
+-- Looking for sys/timerfd.h
+-- Looking for sys/timerfd.h - not found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for epoll_create
+-- Looking for epoll_create - not found
+-- Looking for epoll_ctl
+-- Looking for epoll_ctl - not found
+-- Looking for eventfd
+-- Looking for eventfd - not found
+-- Looking for clock_gettime
+-- Looking for clock_gettime - not found
+-- Looking for fcntl
+-- Looking for fcntl - not found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - not found
+-- Looking for getnameinfo
+-- Looking for getnameinfo - not found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - not found
+-- Looking for getprotobynumber
+-- Looking for getprotobynumber - not found
+-- Looking for getservbyname
+-- Looking for getservbyname - not found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - not found
+-- Looking for inet_pton
+-- Looking for inet_pton - not found
+-- Looking for kqueue
+-- Looking for kqueue - not found
+-- Looking for mmap
+-- Looking for mmap - not found
+-- Looking for pipe
+-- Looking for pipe - not found
+-- Looking for pipe2
+-- Looking for pipe2 - not found
+-- Looking for poll
+-- Looking for poll - not found
+-- Looking for port_create
+-- Looking for port_create - not found
+-- Looking for sendfile
+-- Looking for sendfile - not found
+-- Looking for sigaction
+-- Looking for sigaction - not found
+-- Looking for signal
+-- Looking for signal - not found
+-- Looking for splice
+-- Looking for splice - not found
+-- Looking for strlcpy
+-- Looking for strlcpy - not found
+-- Looking for strsep
+-- Looking for strsep - not found
+-- Looking for strtok_r
+-- Looking for strtok_r - not found
+-- Looking for strtoll
+-- Looking for strtoll - not found
+-- Looking for vasprintf
+-- Looking for vasprintf - not found
+-- Looking for sysctl
+-- Looking for sysctl - not found
+-- Looking for accept4
+-- Looking for accept4 - not found
+-- Looking for arc4random
+-- Looking for arc4random - not found
+-- Looking for arc4random_buf
+-- Looking for arc4random_buf - not found
+-- Looking for arc4random_addrandom
+-- Looking for arc4random_addrandom - not found
+-- Looking for epoll_create1
+-- Looking for epoll_create1 - not found
+-- Looking for getegid
+-- Looking for getegid - not found
+-- Looking for geteuid
+-- Looking for geteuid - not found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - not found
+-- Looking for issetugid
+-- Looking for issetugid - not found
+-- Looking for mach_absolute_time
+-- Looking for mach_absolute_time - not found
+-- Looking for nanosleep
+-- Looking for nanosleep - not found
+-- Looking for usleep
+-- Looking for usleep - not found
+-- Looking for timeradd
+-- Looking for timeradd - not found
+-- Looking for timerclear
+-- Looking for timerclear - not found
+-- Looking for timercmp
+-- Looking for timercmp - not found
+-- Looking for timerfd_create
+-- Looking for timerfd_create - not found
+-- Looking for timerisset
+-- Looking for timerisset - not found
+-- Looking for putenv
+-- Looking for putenv - not found
+-- Looking for setenv
+-- Looking for setenv - not found
+-- Looking for setrlimit
+-- Looking for setrlimit - not found
+-- Looking for umask
+-- Looking for umask - not found
+-- Looking for unsetenv
+-- Looking for unsetenv - not found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of uint8_t
+-- Check size of uint8_t - done
+-- Check size of uint16_t
+-- Check size of uint16_t - done
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- Check size of uint64_t
+-- Check size of uint64_t - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of unsigned
+-- Check size of unsigned - done
+-- Check size of unsigned int
+-- Check size of unsigned int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test HAVE_INLINE
+-- Performing Test HAVE_INLINE - Success
+-- Looking for TAILQ_FOREACH
+-- Looking for TAILQ_FOREACH - not found
+-- Performing Test EVENT__HAVE_DECL_CTL_KERN
+-- Performing Test EVENT__HAVE_DECL_CTL_KERN - Failed
+-- Looking for CTL_KERN - not found
+-- Performing Test EVENT__HAVE_DECL_KERN_ARND
+-- Performing Test EVENT__HAVE_DECL_KERN_ARND - Failed
+-- Looking for KERN_ARND - not found
+-- Performing Test EVENT__HAVE_DECL_KERN_RANDOM
+-- Performing Test EVENT__HAVE_DECL_KERN_RANDOM - Failed
+-- Looking for KERN_RANDOM - not found
+-- Performing Test EVENT__HAVE_DECL_RANDOM_UUID
+-- Performing Test EVENT__HAVE_DECL_RANDOM_UUID - Failed
+-- Looking for RANDOM_UUID - not found
+-- Looking for F_SETFD
+-- Looking for F_SETFD - not found
+-- Check size of fd_mask
+-- Check size of fd_mask - failed
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of SSIZE_T
+-- Check size of SSIZE_T - done
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Check size of pid_t
+-- Check size of pid_t - done
+-- Check size of pthread_t
+-- Check size of pthread_t - failed
+-- Check size of uintptr_t
+-- Check size of uintptr_t - done
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Looking for _MINIX
+-- Looking for _MINIX - not found
+-- Looking for _POSIX_1_SOURCE
+-- Looking for _POSIX_1_SOURCE - not found
+-- Looking for _POSIX_SOURCE
+-- Looking for _POSIX_SOURCE - not found
+-- Check size of struct addrinfo
+-- Check size of struct addrinfo - done
+-- Check size of struct in6_addr
+-- Check size of struct in6_addr - done
+-- Performing Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16
+-- Performing Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16 - Failed
+-- Performing Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32
+-- Performing Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32 - Failed
+-- Check size of sa_family_t
+-- Check size of sa_family_t - failed
+-- Check size of struct sockaddr_in6
+-- Check size of struct sockaddr_in6 - done
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN - Failed
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN - Failed
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY - Success
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY
+-- Performing Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY - Failed
+-- Check size of struct linger
+-- Check size of struct linger - done
+-- Could NOT find ZLIB (missing: ZLIB_INCLUDE_DIR) 
+-- Could NOT find PythonInterp: Found unsuitable version "1.4", but required is at least "3" (found F:/cygwin64/bin/python3)
+-- Could NOT find PythonInterp: Found unsuitable version "1.4", but required is at least "2" (found F:/cygwin64/bin/python3)
+ERRORNo suitable Python version found, bailing...
+CMake Warning at CMakeLists.txt:1001 (message):
+  No suitable Python interpreter found, cannot generate regress tests!
+
+
+CMake Warning at CMakeLists.txt:1116 (message):
+  test-dumpevents will be run without output check since python was not
+  found!
+Call Stack (most recent call first):
+  CMakeLists.txt:1161 (add_backend_test)
+
+
+-- F:/Program\ Files/JetBrains/apps/CLion/ch-0/182.3684.76/bin/cmake/win/bin/ctest.exe
+-- 
+--         ---( Libevent 2.2.0-alpha-dev )---
+-- 
+-- Available event backends: WIN32
+-- CMAKE_BINARY_DIR:         C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug
+-- CMAKE_CURRENT_BINARY_DIR: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug
+-- CMAKE_SOURCE_DIR:         C:/Users/Cthulhu/Desktop/libevent
+-- CMAKE_CURRENT_SOURCE_DIR: C:/Users/Cthulhu/Desktop/libevent
+-- PROJECT_BINARY_DIR:       C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug
+-- PROJECT_SOURCE_DIR:       C:/Users/Cthulhu/Desktop/libevent
+-- CMAKE_MODULE_PATH:        C:/Users/Cthulhu/Desktop/libevent/cmake/
+-- CMAKE_COMMAND:            F:/Program Files/JetBrains/apps/CLion/ch-0/182.3684.76/bin/cmake/win/bin/cmake.exe
+-- CMAKE_ROOT:               F:/Program Files/JetBrains/apps/CLion/ch-0/182.3684.76/bin/cmake/win/share/cmake-3.12
+-- CMAKE_SYSTEM:             Windows-10.0.17134
+-- CMAKE_SYSTEM_NAME:        Windows
+-- CMAKE_SYSTEM_VERSION:     10.0.17134
+-- CMAKE_SYSTEM_PROCESSOR:   AMD64
+-- CMAKE_SKIP_RPATH:         NO
+-- CMAKE_VERBOSE_MAKEFILE:   FALSE
+-- CMAKE_C_FLAGS:             -Wall -Wswitch -fno-strict-aliasing
+-- CMAKE_BUILD_TYPE:         Debug
+-- CMAKE_C_COMPILER:         F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/gcc.exe
+-- CMAKE_AR:                 F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/ar.exe
+-- CMAKE_RANLIB:             F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/ranlib.exe
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug

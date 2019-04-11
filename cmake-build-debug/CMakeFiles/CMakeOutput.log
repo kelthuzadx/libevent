@@ -1,0 +1,946 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_3f7dd/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3f7dd.dir\build.make CMakeFiles/cmTC_3f7dd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f7dd.dir/testCCompiler.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"    -o CMakeFiles\cmTC_3f7dd.dir\testCCompiler.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_3f7dd.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3f7dd.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3f7dd.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_3f7dd.dir/objects.a @CMakeFiles\cmTC_3f7dd.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"      -Wl,--whole-archive CMakeFiles\cmTC_3f7dd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3f7dd.exe -Wl,--out-implib,libcmTC_3f7dd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3f7dd.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_dfd28/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_dfd28.dir\build.make CMakeFiles/cmTC_dfd28.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfd28.dir/CMakeCCompilerABI.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"    -o CMakeFiles\cmTC_dfd28.dir\CMakeCCompilerABI.c.obj   -c "F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_dfd28.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dfd28.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_dfd28.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_dfd28.dir/objects.a @CMakeFiles\cmTC_dfd28.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"     -v -Wl,--whole-archive CMakeFiles\cmTC_dfd28.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dfd28.exe -Wl,--out-implib,libcmTC_dfd28.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe
+COLLECT_LTO_WRAPPER=F:/Program\ Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-7.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev2, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/lib -L/c/mingw710/prerequisites/x86_64-zlib-static/lib -L/c/mingw710/prerequisites/x86_64-w64-mingw32-static/lib '
+Thread model: posix
+gcc version 7.1.0 (x86_64-posix-seh-rev2, Built by MinGW-W64 project) 
+COMPILER_PATH=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../lib/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/;F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd28.exe' '-mtune=core2' '-march=nocona'
+ F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/collect2.exe -plugin F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/liblto_plugin-0.dll -plugin-opt=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Cthulhu\AppData\Local\Temp\ccEKia3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_dfd28.exe F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/crtbegin.o -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0 -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../.. --whole-archive CMakeFiles\cmTC_dfd28.dir/objects.a --no-whole-archive --out-implib libcmTC_dfd28.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd28.exe' '-mtune=core2' '-march=nocona'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_dfd28/fast"]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_dfd28.dir\build.make CMakeFiles/cmTC_dfd28.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_dfd28.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"    -o CMakeFiles\cmTC_dfd28.dir\CMakeCCompilerABI.c.obj   -c "F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\share\cmake-3.12\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_dfd28.exe]
+  ignore line: ["F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dfd28.dir\link.txt --verbose=1]
+  ignore line: ["F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_dfd28.dir/objects.a]
+  ignore line: ["F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_dfd28.dir/objects.a @CMakeFiles\cmTC_dfd28.dir\objects1.rsp]
+  ignore line: ["F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"     -v -Wl,--whole-archive CMakeFiles\cmTC_dfd28.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dfd28.exe -Wl,--out-implib,libcmTC_dfd28.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=F:/Program\ Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-7.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/mingw710/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev2, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/include -I/c/mingw710/prerequisites/x86_64-zlib-static/include -I/c/mingw710/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64/opt/lib -L/c/mingw710/prerequisites/x86_64-zlib-static/lib -L/c/mingw710/prerequisites/x86_64-w64-mingw32-static/lib ']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.1.0 (x86_64-posix-seh-rev2, Built by MinGW-W64 project) ]
+  ignore line: [COMPILER_PATH=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../lib/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd28.exe' '-mtune=core2' '-march=nocona']
+  ignore line: [ F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/collect2.exe -plugin F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/liblto_plugin-0.dll -plugin-opt=F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/7.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Cthulhu\AppData\Local\Temp\ccEKia3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw710/x86_64-710-posix-seh-rt_v5-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_dfd28.exe F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/crtbegin.o -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0 -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/lib -LF:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../.. --whole-archive CMakeFiles\cmTC_dfd28.dir/objects.a --no-whole-archive --out-implib libcmTC_dfd28.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd28.exe' '-mtune=core2' '-march=nocona']
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_ccb53/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ccb53.dir\build.make CMakeFiles/cmTC_ccb53.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccb53.dir/feature_tests.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -std=c11 -o CMakeFiles\cmTC_ccb53.dir\feature_tests.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_ccb53.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ccb53.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ccb53.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_ccb53.dir/objects.a @CMakeFiles\cmTC_ccb53.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"      -Wl,--whole-archive CMakeFiles\cmTC_ccb53.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ccb53.exe -Wl,--out-implib,libcmTC_ccb53.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ccb53.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_0be3f/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_0be3f.dir\build.make CMakeFiles/cmTC_0be3f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0be3f.dir/feature_tests.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -std=c99 -o CMakeFiles\cmTC_0be3f.dir\feature_tests.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_0be3f.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0be3f.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0be3f.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_0be3f.dir/objects.a @CMakeFiles\cmTC_0be3f.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"      -Wl,--whole-archive CMakeFiles\cmTC_0be3f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0be3f.exe -Wl,--out-implib,libcmTC_0be3f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0be3f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_81366/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_81366.dir\build.make CMakeFiles/cmTC_81366.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81366.dir/feature_tests.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -std=c90 -o CMakeFiles\cmTC_81366.dir\feature_tests.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_81366.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_81366.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_81366.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_81366.dir/objects.a @CMakeFiles\cmTC_81366.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"      -Wl,--whole-archive CMakeFiles\cmTC_81366.dir/objects.a -Wl,--no-whole-archive  -o cmTC_81366.exe -Wl,--out-implib,libcmTC_81366.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_81366.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test check_c_compiler_flag__Wall succeeded with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_812ce/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_812ce.dir\build.make CMakeFiles/cmTC_812ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_812ce.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Dcheck_c_compiler_flag__Wall   -Wall -o CMakeFiles\cmTC_812ce.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_812ce.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_812ce.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_812ce.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_812ce.dir/objects.a @CMakeFiles\cmTC_812ce.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Dcheck_c_compiler_flag__Wall    -Wl,--whole-archive CMakeFiles\cmTC_812ce.dir/objects.a -Wl,--no-whole-archive  -o cmTC_812ce.exe -Wl,--out-implib,libcmTC_812ce.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_812ce.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_c_compiler_flag__Wswitch succeeded with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_6c1ac/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6c1ac.dir\build.make CMakeFiles/cmTC_6c1ac.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c1ac.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Dcheck_c_compiler_flag__Wswitch   -Wswitch -o CMakeFiles\cmTC_6c1ac.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_6c1ac.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6c1ac.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6c1ac.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_6c1ac.dir/objects.a @CMakeFiles\cmTC_6c1ac.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Dcheck_c_compiler_flag__Wswitch    -Wl,--whole-archive CMakeFiles\cmTC_6c1ac.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6c1ac.exe -Wl,--out-implib,libcmTC_6c1ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6c1ac.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_c_compiler_flag__fno_strict_aliasing succeeded with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_03167/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_03167.dir\build.make CMakeFiles/cmTC_03167.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03167.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -Dcheck_c_compiler_flag__fno_strict_aliasing   -fno-strict-aliasing -o CMakeFiles\cmTC_03167.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_03167.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_03167.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_03167.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_03167.dir/objects.a @CMakeFiles\cmTC_03167.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -Dcheck_c_compiler_flag__fno_strict_aliasing    -Wl,--whole-archive CMakeFiles\cmTC_03167.dir/objects.a -Wl,--no-whole-archive  -o cmTC_03167.exe -Wl,--out-implib,libcmTC_03167.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_03167.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d2090/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d2090.dir\build.make CMakeFiles/cmTC_d2090.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2090.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d2090.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_d2090.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d2090.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d2090.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_d2090.dir/objects.a @CMakeFiles\cmTC_d2090.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_d2090.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d2090.exe -Wl,--out-implib,libcmTC_d2090.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d2090.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e2821/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e2821.dir\build.make CMakeFiles/cmTC_e2821.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2821.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e2821.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_e2821.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e2821.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e2821.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e2821.dir/objects.a @CMakeFiles\cmTC_e2821.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e2821.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e2821.exe -Wl,--out-implib,libcmTC_e2821.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e2821.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_77ffe/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_77ffe.dir\build.make CMakeFiles/cmTC_77ffe.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77ffe.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_77ffe.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_77ffe.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_77ffe.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_77ffe.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_77ffe.dir/objects.a @CMakeFiles\cmTC_77ffe.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_77ffe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_77ffe.exe -Wl,--out-implib,libcmTC_77ffe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_77ffe.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2a642/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2a642.dir\build.make CMakeFiles/cmTC_2a642.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a642.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2a642.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_2a642.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2a642.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2a642.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_2a642.dir/objects.a @CMakeFiles\cmTC_2a642.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_2a642.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2a642.exe -Wl,--out-implib,libcmTC_2a642.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2a642.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_c3090/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c3090.dir\build.make CMakeFiles/cmTC_c3090.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3090.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_c3090.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_c3090.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c3090.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c3090.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_c3090.dir/objects.a @CMakeFiles\cmTC_c3090.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_c3090.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c3090.exe -Wl,--out-implib,libcmTC_c3090.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c3090.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a5a84/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a5a84.dir\build.make CMakeFiles/cmTC_a5a84.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a5a84.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a5a84.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a5a84.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a5a84.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a5a84.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_a5a84.dir/objects.a @CMakeFiles\cmTC_a5a84.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_a5a84.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a5a84.exe -Wl,--out-implib,libcmTC_a5a84.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a5a84.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_c6126/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c6126.dir\build.make CMakeFiles/cmTC_c6126.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6126.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_c6126.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_c6126.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c6126.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c6126.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_c6126.dir/objects.a @CMakeFiles\cmTC_c6126.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_c6126.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c6126.exe -Wl,--out-implib,libcmTC_c6126.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c6126.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_772d2/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_772d2.dir\build.make CMakeFiles/cmTC_772d2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_772d2.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_772d2.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_772d2.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_772d2.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_772d2.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_772d2.dir/objects.a @CMakeFiles\cmTC_772d2.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_772d2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_772d2.exe -Wl,--out-implib,libcmTC_772d2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_772d2.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a13c7/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a13c7.dir\build.make CMakeFiles/cmTC_a13c7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a13c7.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a13c7.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a13c7.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a13c7.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a13c7.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_a13c7.dir/objects.a @CMakeFiles\cmTC_a13c7.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_a13c7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a13c7.exe -Wl,--out-implib,libcmTC_a13c7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a13c7.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_ed1b0/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ed1b0.dir\build.make CMakeFiles/cmTC_ed1b0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed1b0.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_ed1b0.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_ed1b0.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ed1b0.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ed1b0.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_ed1b0.dir/objects.a @CMakeFiles\cmTC_ed1b0.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_ed1b0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ed1b0.exe -Wl,--out-implib,libcmTC_ed1b0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ed1b0.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_b0847/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_b0847.dir\build.make CMakeFiles/cmTC_b0847.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0847.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_b0847.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_b0847.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b0847.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b0847.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_b0847.dir/objects.a @CMakeFiles\cmTC_b0847.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_b0847.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b0847.exe -Wl,--out-implib,libcmTC_b0847.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b0847.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_54adb/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_54adb.dir\build.make CMakeFiles/cmTC_54adb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54adb.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_54adb.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_54adb.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_54adb.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_54adb.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_54adb.dir/objects.a @CMakeFiles\cmTC_54adb.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_54adb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_54adb.exe -Wl,--out-implib,libcmTC_54adb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_54adb.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_7ed23/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7ed23.dir\build.make CMakeFiles/cmTC_7ed23.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ed23.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_7ed23.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_7ed23.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7ed23.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7ed23.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_7ed23.dir/objects.a @CMakeFiles\cmTC_7ed23.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_7ed23.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7ed23.exe -Wl,--out-implib,libcmTC_7ed23.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7ed23.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2dbfa/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2dbfa.dir\build.make CMakeFiles/cmTC_2dbfa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dbfa.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_2dbfa.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_2dbfa.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2dbfa.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2dbfa.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_2dbfa.dir/objects.a @CMakeFiles\cmTC_2dbfa.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_2dbfa.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2dbfa.exe -Wl,--out-implib,libcmTC_2dbfa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2dbfa.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_96007/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_96007.dir\build.make CMakeFiles/cmTC_96007.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96007.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_96007.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_96007.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_96007.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_96007.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_96007.dir/objects.a @CMakeFiles\cmTC_96007.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_96007.dir/objects.a -Wl,--no-whole-archive  -o cmTC_96007.exe -Wl,--out-implib,libcmTC_96007.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_96007.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f0c2f/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f0c2f.dir\build.make CMakeFiles/cmTC_f0c2f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0c2f.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f0c2f.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_f0c2f.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f0c2f.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f0c2f.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_f0c2f.dir/objects.a @CMakeFiles\cmTC_f0c2f.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_f0c2f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f0c2f.exe -Wl,--out-implib,libcmTC_f0c2f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f0c2f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9f056/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9f056.dir\build.make CMakeFiles/cmTC_9f056.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f056.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9f056.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_9f056.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9f056.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_9f056.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_9f056.dir/objects.a @CMakeFiles\cmTC_9f056.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_9f056.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9f056.exe -Wl,--out-implib,libcmTC_9f056.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9f056.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_39912/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_39912.dir\build.make CMakeFiles/cmTC_39912.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39912.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_39912.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_39912.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_39912.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_39912.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_39912.dir/objects.a @CMakeFiles\cmTC_39912.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_39912.dir/objects.a -Wl,--no-whole-archive  -o cmTC_39912.exe -Wl,--out-implib,libcmTC_39912.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_39912.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a2d87/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a2d87.dir\build.make CMakeFiles/cmTC_a2d87.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2d87.dir/CheckIncludeFile.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a2d87.dir\CheckIncludeFile.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a2d87.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a2d87.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a2d87.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_a2d87.dir/objects.a @CMakeFiles\cmTC_a2d87.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_a2d87.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a2d87.exe -Wl,--out-implib,libcmTC_a2d87.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a2d87.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint8_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_bc52a/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_bc52a.dir\build.make CMakeFiles/cmTC_bc52a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc52a.dir/EVENT__HAVE_UINT8_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_bc52a.dir\EVENT__HAVE_UINT8_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT8_T.c
+Linking C executable cmTC_bc52a.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bc52a.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_bc52a.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_bc52a.dir/objects.a @CMakeFiles\cmTC_bc52a.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_bc52a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bc52a.exe -Wl,--out-implib,libcmTC_bc52a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bc52a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_15a2c/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_15a2c.dir\build.make CMakeFiles/cmTC_15a2c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15a2c.dir/EVENT__HAVE_UINT16_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_15a2c.dir\EVENT__HAVE_UINT16_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT16_T.c
+Linking C executable cmTC_15a2c.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_15a2c.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_15a2c.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_15a2c.dir/objects.a @CMakeFiles\cmTC_15a2c.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_15a2c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_15a2c.exe -Wl,--out-implib,libcmTC_15a2c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_15a2c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e0b15/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e0b15.dir\build.make CMakeFiles/cmTC_e0b15.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0b15.dir/EVENT__HAVE_UINT32_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e0b15.dir\EVENT__HAVE_UINT32_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT32_T.c
+Linking C executable cmTC_e0b15.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e0b15.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e0b15.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e0b15.dir/objects.a @CMakeFiles\cmTC_e0b15.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e0b15.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e0b15.exe -Wl,--out-implib,libcmTC_e0b15.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e0b15.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint64_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_796ec/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_796ec.dir\build.make CMakeFiles/cmTC_796ec.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_796ec.dir/EVENT__HAVE_UINT64_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_796ec.dir\EVENT__HAVE_UINT64_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT64_T.c
+Linking C executable cmTC_796ec.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_796ec.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_796ec.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_796ec.dir/objects.a @CMakeFiles\cmTC_796ec.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_796ec.dir/objects.a -Wl,--no-whole-archive  -o cmTC_796ec.exe -Wl,--out-implib,libcmTC_796ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_796ec.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of short passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e40aa/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e40aa.dir\build.make CMakeFiles/cmTC_e40aa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e40aa.dir/EVENT__SIZEOF_SHORT.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e40aa.dir\EVENT__SIZEOF_SHORT.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SHORT.c
+Linking C executable cmTC_e40aa.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e40aa.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e40aa.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e40aa.dir/objects.a @CMakeFiles\cmTC_e40aa.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e40aa.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e40aa.exe -Wl,--out-implib,libcmTC_e40aa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e40aa.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of int passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d0c46/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d0c46.dir\build.make CMakeFiles/cmTC_d0c46.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0c46.dir/EVENT__SIZEOF_INT.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d0c46.dir\EVENT__SIZEOF_INT.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_INT.c
+Linking C executable cmTC_d0c46.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d0c46.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d0c46.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_d0c46.dir/objects.a @CMakeFiles\cmTC_d0c46.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_d0c46.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d0c46.exe -Wl,--out-implib,libcmTC_d0c46.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d0c46.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e6d79/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e6d79.dir\build.make CMakeFiles/cmTC_e6d79.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6d79.dir/EVENT__SIZEOF_UNSIGNED.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e6d79.dir\EVENT__SIZEOF_UNSIGNED.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED.c
+Linking C executable cmTC_e6d79.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e6d79.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e6d79.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e6d79.dir/objects.a @CMakeFiles\cmTC_e6d79.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e6d79.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e6d79.exe -Wl,--out-implib,libcmTC_e6d79.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e6d79.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e8c19/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e8c19.dir\build.make CMakeFiles/cmTC_e8c19.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8c19.dir/EVENT__SIZEOF_UNSIGNED_INT.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_e8c19.dir\EVENT__SIZEOF_UNSIGNED_INT.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTC_e8c19.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e8c19.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e8c19.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e8c19.dir/objects.a @CMakeFiles\cmTC_e8c19.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e8c19.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e8c19.exe -Wl,--out-implib,libcmTC_e8c19.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e8c19.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of long passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_ad878/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ad878.dir\build.make CMakeFiles/cmTC_ad878.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad878.dir/EVENT__SIZEOF_LONG.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_ad878.dir\EVENT__SIZEOF_LONG.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG.c
+Linking C executable cmTC_ad878.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ad878.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ad878.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_ad878.dir/objects.a @CMakeFiles\cmTC_ad878.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_ad878.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ad878.exe -Wl,--out-implib,libcmTC_ad878.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ad878.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_f6086/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f6086.dir\build.make CMakeFiles/cmTC_f6086.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6086.dir/EVENT__SIZEOF_LONG_LONG.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_f6086.dir\EVENT__SIZEOF_LONG_LONG.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG_LONG.c
+Linking C executable cmTC_f6086.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f6086.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f6086.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_f6086.dir/objects.a @CMakeFiles\cmTC_f6086.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_f6086.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f6086.exe -Wl,--out-implib,libcmTC_f6086.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f6086.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeeded with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_40580/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_40580.dir\build.make CMakeFiles/cmTC_40580.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40580.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing -DHAVE_INLINE   -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_40580.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_40580.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_40580.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_40580.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_40580.dir/objects.a @CMakeFiles\cmTC_40580.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing -DHAVE_INLINE    -Wl,--whole-archive CMakeFiles\cmTC_40580.dir/objects.a -Wl,--no-whole-archive  -o cmTC_40580.exe -Wl,--out-implib,libcmTC_40580.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_40580.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Determining size of size_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_ff656/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ff656.dir\build.make CMakeFiles/cmTC_ff656.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff656.dir/EVENT__SIZEOF_SIZEE_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_ff656.dir\EVENT__SIZEOF_SIZEE_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SIZEE_T.c
+Linking C executable cmTC_ff656.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ff656.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ff656.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_ff656.dir/objects.a @CMakeFiles\cmTC_ff656.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_ff656.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ff656.exe -Wl,--out-implib,libcmTC_ff656.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ff656.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of off_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_5b0e0/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_5b0e0.dir\build.make CMakeFiles/cmTC_5b0e0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b0e0.dir/EVENT__SIZEOF_OFF_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_5b0e0.dir\EVENT__SIZEOF_OFF_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_OFF_T.c
+Linking C executable cmTC_5b0e0.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5b0e0.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_5b0e0.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_5b0e0.dir/objects.a @CMakeFiles\cmTC_5b0e0.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_5b0e0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5b0e0.exe -Wl,--out-implib,libcmTC_5b0e0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5b0e0.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_0ba0e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_0ba0e.dir\build.make CMakeFiles/cmTC_0ba0e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ba0e.dir/EVENT__SIZEOF_SSIZE_T_LOWER.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_0ba0e.dir\EVENT__SIZEOF_SSIZE_T_LOWER.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_LOWER.c
+Linking C executable cmTC_0ba0e.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0ba0e.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0ba0e.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_0ba0e.dir/objects.a @CMakeFiles\cmTC_0ba0e.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_0ba0e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0ba0e.exe -Wl,--out-implib,libcmTC_0ba0e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0ba0e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of SSIZE_T passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_aa9ff/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_aa9ff.dir\build.make CMakeFiles/cmTC_aa9ff.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa9ff.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_aa9ff.dir\EVENT__SIZEOF_SSIZE_T_UPPER.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_UPPER.c
+Linking C executable cmTC_aa9ff.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aa9ff.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_aa9ff.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_aa9ff.dir/objects.a @CMakeFiles\cmTC_aa9ff.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_aa9ff.dir/objects.a -Wl,--no-whole-archive  -o cmTC_aa9ff.exe -Wl,--out-implib,libcmTC_aa9ff.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_aa9ff.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of socklen_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_8543b/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_8543b.dir\build.make CMakeFiles/cmTC_8543b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8543b.dir/EVENT__SIZEOF_SOCKLEN_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_8543b.dir\EVENT__SIZEOF_SOCKLEN_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SOCKLEN_T.c
+Linking C executable cmTC_8543b.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8543b.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8543b.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_8543b.dir/objects.a @CMakeFiles\cmTC_8543b.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_8543b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8543b.exe -Wl,--out-implib,libcmTC_8543b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8543b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of pid_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_09d26/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_09d26.dir\build.make CMakeFiles/cmTC_09d26.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09d26.dir/EVENT__SIZEOF_PID_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_09d26.dir\EVENT__SIZEOF_PID_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PID_T.c
+Linking C executable cmTC_09d26.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_09d26.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_09d26.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_09d26.dir/objects.a @CMakeFiles\cmTC_09d26.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_09d26.dir/objects.a -Wl,--no-whole-archive  -o cmTC_09d26.exe -Wl,--out-implib,libcmTC_09d26.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_09d26.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of uintptr_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_6827e/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_6827e.dir\build.make CMakeFiles/cmTC_6827e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6827e.dir/EVENT__HAVE_UINTPTR_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_6827e.dir\EVENT__HAVE_UINTPTR_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINTPTR_T.c
+Linking C executable cmTC_6827e.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6827e.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6827e.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_6827e.dir/objects.a @CMakeFiles\cmTC_6827e.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_6827e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6827e.exe -Wl,--out-implib,libcmTC_6827e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6827e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_9511f/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_9511f.dir\build.make CMakeFiles/cmTC_9511f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9511f.dir/EVENT__SIZEOF_VOID_P.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_9511f.dir\EVENT__SIZEOF_VOID_P.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_VOID_P.c
+Linking C executable cmTC_9511f.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9511f.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_9511f.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_9511f.dir/objects.a @CMakeFiles\cmTC_9511f.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_9511f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9511f.exe -Wl,--out-implib,libcmTC_9511f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9511f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of time_t passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a219d/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a219d.dir\build.make CMakeFiles/cmTC_a219d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a219d.dir/EVENT__SIZEOF_TIME_T.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_a219d.dir\EVENT__SIZEOF_TIME_T.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_TIME_T.c
+Linking C executable cmTC_a219d.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a219d.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a219d.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_a219d.dir/objects.a @CMakeFiles\cmTC_a219d.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_a219d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a219d.exe -Wl,--out-implib,libcmTC_a219d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a219d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct addrinfo passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_d1f23/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d1f23.dir\build.make CMakeFiles/cmTC_d1f23.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1f23.dir/EVENT__HAVE_STRUCT_ADDRINFO.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"   -Wall -Wswitch -fno-strict-aliasing    -FIwinsock2.h -FIws2tcpip.h -o CMakeFiles\cmTC_d1f23.dir\EVENT__HAVE_STRUCT_ADDRINFO.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_ADDRINFO.c
+Linking C executable cmTC_d1f23.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d1f23.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d1f23.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_d1f23.dir/objects.a @CMakeFiles\cmTC_d1f23.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_d1f23.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d1f23.exe -Wl,--out-implib,libcmTC_d1f23.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d1f23.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct in6_addr passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_a7ea1/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7ea1.dir\build.make CMakeFiles/cmTC_a7ea1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7ea1.dir/EVENT__HAVE_STRUCT_IN6_ADDR.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles\cmTC_a7ea1.dir\EVENT__HAVE_STRUCT_IN6_ADDR.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_IN6_ADDR.c
+Linking C executable cmTC_a7ea1.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a7ea1.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a7ea1.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_a7ea1.dir/objects.a @CMakeFiles\cmTC_a7ea1.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_a7ea1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a7ea1.exe -Wl,--out-implib,libcmTC_a7ea1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a7ea1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct sockaddr_in6 passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_e6720/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e6720.dir\build.make CMakeFiles/cmTC_e6720.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6720.dir/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles\cmTC_e6720.dir\EVENT__HAVE_STRUCT_SOCKADDR_IN6.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_IN6.c
+Linking C executable cmTC_e6720.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e6720.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e6720.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_e6720.dir/objects.a @CMakeFiles\cmTC_e6720.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_e6720.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e6720.exe -Wl,--out-implib,libcmTC_e6720.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e6720.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct sockaddr_storage passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_2fe70/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_2fe70.dir\build.make CMakeFiles/cmTC_2fe70.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fe70.dir/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles\cmTC_2fe70.dir\EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c
+Linking C executable cmTC_2fe70.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2fe70.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2fe70.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_2fe70.dir/objects.a @CMakeFiles\cmTC_2fe70.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_2fe70.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2fe70.exe -Wl,--out-implib,libcmTC_2fe70.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2fe70.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY succeeded with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_50368/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_50368.dir\build.make CMakeFiles/cmTC_50368.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50368.dir/src.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY   -o CMakeFiles\cmTC_50368.dir\src.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_50368.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_50368.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_50368.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_50368.dir/objects.a @CMakeFiles\cmTC_50368.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY    -Wl,--whole-archive CMakeFiles\cmTC_50368.dir/objects.a -Wl,--no-whole-archive  -o cmTC_50368.exe -Wl,--out-implib,libcmTC_50368.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_50368.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_storage *)0)->ss_family);
+   return 0;
+}
+
+Determining size of struct linger passed with the following output:
+Change Dir: C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe" "cmTC_07fd3/fast"
+F:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_07fd3.dir\build.make CMakeFiles/cmTC_07fd3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07fd3.dir/EVENT__HAVE_STRUCT_LINGER.c.obj
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe" -DWIN32_LEAN_AND_MEAN  -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles\cmTC_07fd3.dir\EVENT__HAVE_STRUCT_LINGER.c.obj   -c C:\Users\Cthulhu\Desktop\libevent\cmake-build-debug\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_LINGER.c
+Linking C executable cmTC_07fd3.exe
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_07fd3.dir\link.txt --verbose=1
+"F:\Program Files\JetBrains\apps\CLion\ch-0\182.3684.76\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_07fd3.dir/objects.a
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\ar.exe" cr CMakeFiles\cmTC_07fd3.dir/objects.a @CMakeFiles\cmTC_07fd3.dir\objects1.rsp
+"F:\Program Files\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\gcc.exe"  -Wall -Wswitch -fno-strict-aliasing     -Wl,--whole-archive CMakeFiles\cmTC_07fd3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_07fd3.exe -Wl,--out-implib,libcmTC_07fd3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_07fd3.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Cthulhu/Desktop/libevent/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+

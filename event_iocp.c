@@ -180,21 +180,15 @@ event_iocp_port_launch_(int n_cpus)
 	///它的具体结构如下
 #if 0
 	struct event_iocp_port {
-	/** IOCP handle */
 	HANDLE port;
-	/* 该结构关联的锁 */
 	CRITICAL_SECTION lock;
-	/** 工作在IOCP上的线程数 */
 	short n_threads;
 	/** 如果为true则关闭所有工作者线程 */
 	short shutdown;
 	/** 定义每隔多久线程检查shutdown↑和其他条件 */
 	long ms;
-	/* 等待事件的线程 */
 	HANDLE *threads;
-	/** 当前端口打开的线程数 */
 	short n_live_threads;
-	/** 关闭线程s信号量 */
 	HANDLE *shutdownSemaphore;
 };
 #endif
@@ -233,7 +227,7 @@ event_iocp_port_launch_(int n_cpus)
 	if (!port->shutdownSemaphore)
 		goto err;
     ///////////////////////////////////////////////////////////////////////////
-    ///工作者线程需要手动创建，n_live_threads++
+    ///创建工作者线程，n_live_threads++
     ///////////////////////////////////////////////////////////////////////////
 	for (i=0; i<port->n_threads; ++i) {
 		ev_uintptr_t th = _beginthread(loop, 0, port);
